@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">HGGC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="driver_s_job_description" />
+    <string name="in_the_name_of_allah_kind_beneficent"><![CDATA[In the name of Allah, Kind & Beneficent]]></string>
+    <string name="introduction">Introduction</string>
+    <string name="driver_s_job_descriptions">Driver\'s Job Description</string>
+    <string name="haji_gul_group_of_companies">Haji Gul Group of Companies</string>
+    <string name="menu">Menu</string>
+    <string name="main">Main</string>
+    <string name="about_us">About Us</string>
+    <string name="your_placeholder_text">your_placeholder_text</string>
+    <string name="staff_recuitment_procedure">Staff Recuitment Procedure</string>
+    <string name="Items" />
+    <string name="items">Items</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

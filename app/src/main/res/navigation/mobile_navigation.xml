@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.hggc.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.hggc.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.example.hggc.ui.menu.MenuFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_nav_menu_to_introFragment"
+            app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_driverFragment"
+            app:destination="@id/driverFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_itemPolFragment2"
+            app:destination="@id/itemPolFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.hggc.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" />
+    <fragment
+        android:id="@+id/driverFragment"
+        android:name="com.example.hggc.DriverFragment"
+        android:label="fragment_driver"
+        tools:layout="@layout/fragment_driver" />
+    <fragment
+        android:id="@+id/itemPolFragment"
+        android:name="com.example.hggc.ItemPolFragment"
+        android:label="fragment_item_pol_list"
+        tools:layout="@layout/fragment_item_pol_list">
+        <action
+            android:id="@+id/action_itemPolFragment_to_polFragment"
+            app:destination="@id/polFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/polFragment"
+        android:name="com.example.hggc.PolFragment"
+        android:label="fragment_pol"
+        tools:layout="@layout/fragment_pol" />
+
+
+</navigation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverFragment"
+    android:background="@drawable/baseline_brightness_2_24">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text=": ڈرائیور کے کام"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/secondHeadingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headingTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:text="ملازمت کی ذمہ داریاں"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondHeadingTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:text="01. کمپنی کے پٹرولیم مصنوعات کی با حفاظت ترسیل۔\n02. پٹرولیم مصنوعات کی لوڈنگ، آف لوڈنگ ،وقت پر ترسیلی اور مال کے معیار اور مقدار میں کمی نہیں ہونی چاہیے ۔\n03. سفری منصوبہ بندی، گاڑی کی صفائی اور حفاطت\n04. ڈیلیوری سے متعلق کاغذات/انوائس کے بارے میں معلومات اور انکا صحیح استعمال(دفتر جمع کرانا)۔\nاپنے آپ کو تھکاوٹ سے دور رکھیں۔  .05  \n06. گاڑی کو فٹ رکھیں اورکسی قسم کی معلومات کے لیے دفتر سے رابطے میں رہیں۔\n07. اپنے ضروری کاغذات(شناختی کارڈ، ڈرائیونگ لائسنس اور موٹروے کارڈ) اپنے ہمراہ رکھیں۔\n08. کمپنی کی فراہم کردہ ٹریننگ حاصل کریں، ٹول بکس میٹنگ میں شرکت کو یقینی بنائیں اور ان پر عمل کریں۔\n09. ٹرپ لاگ کی صحیح طریقے سے فلنگ اور سفر کے اختتام پر دفتر جمع کروانا۔\nٹریفک کے قوانین پرعمل درامد۔. 10. \n11. راستے کے خطرات اور مسائل(این ایم پی آئی)کی اطلاع دینا لازمی ہے۔\n12. گاڑی بھرنے  سے قبل  سیف ٹو لوڈ کرانا لازمی ہے اور اس دوران گاڑی  خرابی کو نوٹ کرانا اور ان کو درست کروانا\n13. بیس پر ہونے والی سیفٹی ڈرل کی سرگرمیوں میں شرکت لازمی ہے۔\n14. کسی بھی غیر محفوظ، غیر معیاری اور سیفٹی کے اصولوں کی خلاف ورزی پر مبنی کاموں کے لیے کمپنی کے فراہم کردہ سٹاپ کارڈ کا استعمال کریں اور اس کی اطلاع فوراًاپنے دفتر دیں تا کہ اس مسئلے کو حل کیا جا سکے۔\n. کسٹمرز کے ساتھ پیار اور خوش اخلاقی سے پیش آئیں۔"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</FrameLayout>
