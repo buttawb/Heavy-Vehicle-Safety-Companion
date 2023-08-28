@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".policies.Policy6Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:text="PPE Policy"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:text="All employees should use the following PPEs according to job requirements:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="1. Safety Helmet"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="2. Safety Shoes"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="3. Coverall"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="4. Safety Goggles"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="5. Safety Gloves"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="6. Ear Protector"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="7. Respiratory Mask"
+            android:textColor="#000000" />
+        <!-- End of New Content -->
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            android:text="Start Reading"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

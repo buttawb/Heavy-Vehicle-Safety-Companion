@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".procedures.Procedure3Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Product Handling and Associated Risks -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:text="Product handling and associated risks"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Add TextViews for each step -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="1. Store product in correctly labelled containers"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="2. Follow any instructions on product labels"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="3. Wear correct protective clothing"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="4. Use barrier cream and/or gloves"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="5. Avoid skin contact"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="6. Avoid breathing vapors."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="7. Never swallow / mouth siphoning"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="8. No eating/smoking"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="9. Keep all ignition sources away"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="10. If the product makes contact with your skin, remove it from the skin promptly by washing hands with soap"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="11. Do not use the product to remove oil/grease from the skin"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="12. After handling the product, Wash hands and face before eating, drinking, toilet needs"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="13. Get first aid for cuts and scratches"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="14. Get medical advice for abnormal skin conditions"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="15. Use the following PPE for product handling:"
+            android:textColor="#000000" />
+
+        <!-- Create a bullet point list for the sub-points -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Gloves (gauntlets, thermally insulated, impervious to liquids)"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Safety boots"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Goggles"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Side shields"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Full-face shields"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Safety helmets with chin guard"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Clothes (cotton / natural, anti-static)"
+            android:textColor="#000000" />
+
+        <!-- Add more TextViews or bullet points as needed -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="16. For more details, read the driver’s handbook, which is available in every vehicle."
+            android:textColor="#000000" />
+
+        <!-- End of Product Handling and Associated Risks -->
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            android:text="Start Reading"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".policies.Policy5Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:text="Medical Policy"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- New Content -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:text="HAJI GUL GROUP OF COMPANIES is committed to protecting the health of all its employees. Medical examination from an approved lab is an integral part of the selection process."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+
+            android:paddingBottom="8dp"
+            android:text="The following tests must be done before the driver is selected and re-tested every two years, and the company is authorized to test any driver for drugs and alcohol at any time:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="1. Eye examination"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="2. Hearing inspection"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="3. Physical examination"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="4. Blood test"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="5. Opiate test"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="6. Cannabinoid test"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="7. Alcohol level in the blood"
+            android:textColor="#000000" />
+        <!-- End of New Content -->
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            android:text="Start Reading"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

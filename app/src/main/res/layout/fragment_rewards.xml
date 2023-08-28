@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context="RewardsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Driver Evaluation Procedure -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:text="DRIVER EVALUATION PROCEDURE:"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Create a numbered list for the procedure steps -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="1. This procedure shall be applicable to all active tank lorry drivers of the company who have completed DDC and other related trainings."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="2. Drivers shall be evaluated for Driver League System on quarterly performance, and merit points will be awarded to them as per the following criteria:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="3. All merit points will be recorded in KPI Sheet when points are awarded as per scoring criteria. The sheet will be kept updated by the Operation Manager/Supervisor."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="4. Awarded points shall be classified into three categories:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="❖ 1st: Those scoring the highest % of criteria score in a quarter."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="❖ 2nd: Those scoring 2nd highest % of criteria score in a quarter."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="❖ 3rd: Those scoring 3rd highest % of criteria score in a quarter."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="5. Following incentives shall be awarded to those who secure in the above categories:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="❖ 1st Position: shall be awarded 75% of the monthly salary."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="❖ 2nd Position: shall be awarded 50% of the monthly salary."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="❖ 3rd Position: shall be awarded 50% of the monthly salary."
+            android:textColor="#000000" />
+
+        <!-- End of Driver Evaluation Procedure -->
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            android:text="Start Reading"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".procedures.Procedure6Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Hosepipe Handling -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:text="HOSEPIPE HANDLING:"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Add TextViews for each step -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="1. Hosepipe shall be put in the hosepipe carrier/box available in the side of Truck."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="2. Proper PPE must be worn while handling hose pipe (cotton gloves)."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="3. Open the hose pipe box and apply force from both hands."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="4. While lifting hose pipe, sit on the floor and lift hose pipe and rest it on shoulder."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="5. Stand-up gently, do not stand-up with a jerk."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="6. Connect Hosepipe at location decantation point."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="7. Check hosepipe is properly fixed (using locking mechanism) prior to start decantation."
+            android:textColor="#000000" />
+
+        <!-- End of Hosepipe Handling -->
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            android:text="Start Reading"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

@@ -50,9 +50,36 @@ class MenuFragment : Fragment() {
             findNavController().navigate(R.id.action_nav_menu_to_driverFragment)
         }
         card3.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_itemPolFragment2)
+            findNavController().navigate(R.id.action_nav_menu_to_policiesFragment)
         }
 
+        card4.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_menu_to_proceduresFragment)
+        }
+
+        card5.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_menu_to_emergencyProceduresFragment)
+        }
+
+        card6.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_menu_to_trainingFragment)
+        }
+
+        card7.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_menu_to_workFormFragment)
+        }
+
+        card8.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_menu_to_rewardsFragment)
+        }
+
+        card9.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_menu_to_penaltiesFragment)
+        }
+
+        card10.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_menu_to_videosFragment)
+        }
 // Add similar listeners for other cards
 
 

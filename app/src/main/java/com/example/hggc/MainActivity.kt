@@ -10,7 +10,6 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.hggc.databinding.ActivityMainBinding
-import com.example.hggc.placeholder.PlaceholderContent
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 
@@ -28,10 +27,12 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
-        binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+//        binding.appBarMain.fab.setOnClickListener { view ->
+//            val navController = findNavController(R.id.nav_menu)
+//
+//            // Navigate to the desired destination fragment
+//            navController.navigate(R.id.nav_menu)
+//        }
 
         val drawerLayout = binding.drawerLayout
         val navView = binding.navView

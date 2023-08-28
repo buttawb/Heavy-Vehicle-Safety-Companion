@@ -43,7 +43,7 @@ class IntroFragment : Fragment() {
 
         // Find the VideoView and the "Play" button in your fragment's layout XML.
         val videoView: VideoView = view.findViewById(R.id.videoView)
-        val playButton: Button = view.findViewById(R.id.playButton)
+        val playButton: Button = view.findViewById(R.id.buttonContainer)
 
         // Set a click listener on the "Play" button to start video playback.
         playButton.setOnClickListener {
@@ -58,6 +58,8 @@ class IntroFragment : Fragment() {
 
             // Start video playback.
             videoView.start()
+            playButton.visibility = View.GONE
+
         }
 
         // You can keep any other existing UI elements and code here.

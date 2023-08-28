@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".procedures.Procedure5Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Vehicle Parking Rules -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:text="VEHICLE PARKING RULES:"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Add TextViews for each step -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="1. The driver should assess the parking area before parking the vehicle. Following are few checks that need to be performed:"
+            android:textColor="#000000" />
+
+        <!-- Create a bullet point list for the sub-points -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Is there proper access to the rest area, with an appropriate approach road?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Has the site got enough parking spaces to park the vehicle safely?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Has the site got enough facility for drivers to take rest?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Is the land solid enough to bear the vehicle load?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Is there proper lighting in the parking?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Is there any fuel station nearby?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Is there any maintenance facility available on the site?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Is there any hazard of flames or welding in the nearby area?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Is there proper security available in that place?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="2. If all of the above-mentioned hazards are assessed and no problem is found, then the driver can park his vehicle at the site."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="3. After Parking:"
+            android:textColor="#000000" />
+
+        <!-- Create a bullet point list for the sub-points -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Always Lock Your Doors"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Roll Up and Lock Your Windows"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Do Not Leave Valuables Insight - (phones, pagers, purses, wallets, etc., invite theft)"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Put valuables and packages in the trunk or out of sight before arriving at the parking facility."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Do Not Leave the vehicle unattended."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• If you have the option, choose a well-lit parking spot."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Do not hide a spare key in or on your vehicle - it can be found."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Be aware and report any suspicious activity immediately by calling HGGC Emergency # 0346-6381599 or for emergencies dial 15"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:text="4. When returning to your vehicle:"
+            android:textColor="#000000" />
+
+        <!-- Create a bullet point list for the sub-points -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Return to your vehicle along with another driver."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Have your door keys in hand?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• When approaching your vehicle, look inside before entering to make sure there are no unwanted occupants. After entering, lock all doors."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Once inside the vehicle, lock the door and start the engine. Start moving the vehicle as soon as possible after getting situated."
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• If there is any concern for personal safety, for any reason, notify the Police immediately or call HGGC ER number 0346-6381599"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="48dp"
+            android:paddingBottom="8dp"
+            android:text="• Never offer rides to an unauthorized person."
+            android:textColor="#000000" />
+
+        <!-- End of Vehicle Parking Rules -->
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            android:text="Start Reading"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
