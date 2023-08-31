@@ -56,6 +56,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     api("com.github.barteksc:pdfium-android:1.9.0")
     implementation("com.itextpdf:itextg:5.5.10")
+    implementation("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
 
 
 }

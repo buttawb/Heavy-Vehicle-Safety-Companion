@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HGGC</string>
+    <string name="app_name" translatable="false">HGGC</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -28,4 +28,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hggc" translatable="false">HGGC</string>
+    <string name="product_spillage">PRODUCT SPILLAGE:</string>
+    <string name="park_the_vehicle_at_a_safe_site">• Park the vehicle at a safe site</string>
+    <string name="inform_the_company_emergency_response_coordinator_and_client_emergency_number">• Inform the company emergency response coordinator and client emergency number.</string>
+    <string name="inform_the_local_area_fire_brigade">• Inform the local area fire brigade</string>
+    <string name="turn_off_the_electrical_system_by_operating_the_engine_master_switch_and_shut_down_the_engine">• Turn off the electrical system by operating the engine master switch, and shut down the engine.</string>
+    <string name="try_to_control_spill_with_the_help_of_available_resources_e_g_a_spill_kit_soap_also_can_get_help_from_other_tank_lorry_drivers_moving_on_the_same_road">• Try to control spill with the help of available resources, e.g., a Spill Kit, Soap, also can get help from other tank lorry drivers (moving on the same road)</string>
+    <string name="ensure_there_is_no_source_of_ignition_nearby">• Ensure there is no source of ignition nearby</string>
+    <string name="cordon_off_brigade_the_area">• Cordon-off/brigade the area</string>
+    <string name="properly_place_the_safety_cone_up_to_50m_from_the_vehicle">• Properly place the safety cone up to 50m from the vehicle</string>
+    <string name="try_to_keep_people_away_from_the_incident_area">• Try to keep people away from the incident area.</string>
+    <string name="start_reading">Start Reading</string>
 </resources>

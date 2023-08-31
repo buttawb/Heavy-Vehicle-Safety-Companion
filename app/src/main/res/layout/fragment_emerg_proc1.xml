@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:lineSpacingExtra="8dp"
             android:paddingBottom="8dp"
-            android:text="PRODUCT SPILLAGE:"
+            android:text="@string/product_spillage"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -30,7 +30,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Park the vehicle at a safe site"
+            android:text="@string/park_the_vehicle_at_a_safe_site"
             android:textColor="#000000" />
 
         <TextView
@@ -39,7 +39,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Inform the company emergency response coordinator and client emergency number."
+            android:text="@string/inform_the_company_emergency_response_coordinator_and_client_emergency_number"
             android:textColor="#000000" />
 
         <TextView
@@ -48,7 +48,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Inform the local area fire brigade"
+            android:text="@string/inform_the_local_area_fire_brigade"
             android:textColor="#000000" />
 
         <TextView
@@ -57,7 +57,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Turn off the electrical system by operating the engine master switch, and shut down the engine."
+            android:text="@string/turn_off_the_electrical_system_by_operating_the_engine_master_switch_and_shut_down_the_engine"
             android:textColor="#000000" />
 
         <TextView
@@ -66,7 +66,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Try to control spill with the help of available resources, e.g., a Spill Kit, Soap, also can get help from other tank lorry drivers (moving on the same road)"
+            android:text="@string/try_to_control_spill_with_the_help_of_available_resources_e_g_a_spill_kit_soap_also_can_get_help_from_other_tank_lorry_drivers_moving_on_the_same_road"
             android:textColor="#000000" />
 
         <TextView
@@ -75,7 +75,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Ensure there is no source of ignition nearby"
+            android:text="@string/ensure_there_is_no_source_of_ignition_nearby"
             android:textColor="#000000" />
 
         <TextView
@@ -84,7 +84,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Cordon-off/brigade the area"
+            android:text="@string/cordon_off_brigade_the_area"
             android:textColor="#000000" />
 
         <TextView
@@ -93,7 +93,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Properly place the safety cone up to 50m from the vehicle"
+            android:text="@string/properly_place_the_safety_cone_up_to_50m_from_the_vehicle"
             android:textColor="#000000" />
 
         <TextView
@@ -102,7 +102,7 @@
             android:lineSpacingExtra="8dp"
             android:paddingLeft="32dp"
             android:paddingBottom="8dp"
-            android:text="• Try to keep people away from the incident area."
+            android:text="@string/try_to_keep_people_away_from_the_incident_area"
             android:textColor="#000000" />
 
         <!-- End of Product Spillage -->
@@ -114,7 +114,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginTop="40dp"
             android:padding="16dp"
-            android:text="Start Reading"
+            android:text="@string/start_reading"
             android:textColor="@android:color/white" />
 
     </LinearLayout>

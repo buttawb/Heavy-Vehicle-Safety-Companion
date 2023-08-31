@@ -1,23 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
 
-        <item
-            android:id="@+id/nav_menu"
-            android:icon="@drawable/baseline_double_arrow_24"
-            android:title="Main" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+        <item android:title="Explore">
 
-        <item
-            android:id="@+id/nav_aboutus"
-            android:icon="@drawable/baseline_person_24"
-            android:title="About Us" />
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_menu"
+                        android:icon="@drawable/baseline_double_arrow_24"
+                        android:title="Main" />
+
+                    <item
+                        android:id="@+id/nav_gallery"
+                        android:icon="@drawable/ic_menu_gallery"
+                        android:title="@string/menu_gallery" />
+
+
+                </group>
+            </menu>
+        </item>
+
+        <!-- Language Toggle Switch -->
+        <item android:title="Language">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_aboutus"
+                        android:icon="@drawable/baseline_person_24"
+                        android:title="About Us" />
+                </group>
+
+            </menu>
+        </item>
+
 
     </group>
 </menu>
