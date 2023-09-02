@@ -2,22 +2,13 @@
 App screens. 
 
 
-![image](https://github.com/buttawb/HGGC-AndroidApp/assets/102326149/b38d65f4-e15a-4e8e-9acc-dd6c42e89651)
+![image](https://github.com/buttawb/HGGC-AndroidApp/assets/102326149/8d83ce5a-fc0e-43e8-9885-2196f0db1e80) ![image](https://github.com/buttawb/HGGC-AndroidApp/assets/102326149/d2901451-4d3b-4c0e-8eaf-7cda79733eac)
+
+
+![image](https://github.com/buttawb/HGGC-AndroidApp/assets/102326149/62b6e971-5a9c-42d6-b5e6-b6c500f414b7) ![image](https://github.com/buttawb/HGGC-AndroidApp/assets/102326149/91e26163-13ae-4d7b-9e82-621bb4c794b6)
 
 
 
-
-![image](https://github.com/buttawb/HGGC-AndroidApp/assets/102326149/7eed5fe6-bf78-401e-8fd9-810e84568d6b)
-
-
-
-
-![image](https://github.com/buttawb/HGGC-AndroidApp/assets/102326149/30b7edaf-42bb-46cc-845f-b482c580b5e8)
-
-
-
-
-![image](https://github.com/buttawb/HGGC-AndroidApp/assets/102326149/66104da1-7748-4ba7-b397-7083048672c8)
 
 
 
