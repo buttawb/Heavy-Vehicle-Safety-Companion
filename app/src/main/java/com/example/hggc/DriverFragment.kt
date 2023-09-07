@@ -1,5 +1,6 @@
 package com.example.hggc
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,8 @@ import com.google.android.material.tabs.TabLayout
 
 class DriverFragment : Fragment() {
 
+    private var mMediaPlayer: MediaPlayer? = null
+    private var isPlaying = false
     private lateinit var pdfTextToSpeechHelper: PdfTextToSpeechHelper
     private var isReading = false
     private var tab_select = true
@@ -63,52 +66,76 @@ class DriverFragment : Fragment() {
         // Initialize your PDFTextToSpeechHelper
 
 
+        pdfTextToSpeechHelper = PdfTextToSpeechHelper(requireContext())
+
+        // Find the "Read PDF" button
+
         // Find the "Read PDF" button
         val floatingButton = view.findViewById<FloatingActionButton>(R.id.floating_button)
         floatingButton.setOnClickListener {
             if (isReading) {
                 // Stop reading and change button text
+                isReading = false
                 pdfTextToSpeechHelper.stopSpeaking()
                 //                btnRead.text = "Start Reading"
                 floatingButton.setImageResource(R.drawable.baseline_voice_over_off_24)
 
-                isReading = false
+            } else if (isPlaying) {
+                isPlaying = false
+                mMediaPlayer!!.release()
+                mMediaPlayer = null
+                floatingButton.setImageResource(R.drawable.baseline_voice_over_off_24)
+
+
             } else {
                 // Start reading and change button text
                 if (tab_select) {
                     // Read the first text
+                    isReading = true
                     pdfTextToSpeechHelper.startSpeaking(
                         engText,
                         object : PdfTextToSpeechHelper.OnCompletionListener {
                             override fun onCompletion() {
                                 // This is called when the speech is completed
+                                floatingButton.setImageResource(R.drawable.baseline_voice_over_off_24)
+                                onPause()
                                 activity?.runOnUiThread {
                                     // You can add any actions to perform when the first text is done reading
                                 }
                             }
-                        }
-                    )
+                        })
+                    floatingButton.setImageResource(R.drawable.baseline_record_voice_over_24)
+
+
                 } else {
                     // Read the second text
-                    pdfTextToSpeechHelper.startSpeaking(
-                        urduText,
-                        object : PdfTextToSpeechHelper.OnCompletionListener {
-                            override fun onCompletion() {
-                                // This is called when the speech is completed
-                                activity?.runOnUiThread {
-                                    // You can add any actions to perform when the second text is done reading
-                                }
-                            }
-                        }
-                    )
+                    mMediaPlayer = MediaPlayer.create(requireContext(), R.raw.dj)
+                    mMediaPlayer!!.isLooping = false
+
+// Set up an OnCompletionListener
+
+// Set up an OnCompletionListener
+                    mMediaPlayer!!.setOnCompletionListener { mediaPlayer ->
+                        // The audio playback has completed, so stop the MediaPlayer
+                        floatingButton.setImageResource(R.drawable.baseline_voice_over_off_24)
+                        onStop()
+                        isPlaying = false // Update the flag
+                    }
+
+// Start the audio playback
+
+// Start the audio playback
+                    mMediaPlayer!!.start()
+                    isPlaying = true
+
+
+                    floatingButton.setImageResource(R.drawable.baseline_record_voice_over_24)
                 }
 
-                floatingButton.setImageResource(R.drawable.baseline_record_voice_over_24)
-                //                btnRead.text = "Stop Reading"
-                isReading = true
-            }
-        }
 
+            }
+
+        }
 
         // Find the TabLayout
         english_scrollview = view.findViewById(R.id.english_scrollview)
@@ -159,12 +186,7 @@ class DriverFragment : Fragment() {
 
     }
 
-
-    // Rest of your code
-    // ...
-
-// Function to toggle between English and Urdu content
-
+    // 2. Pause playback
 
     override fun onPause() {
         super.onPause()
@@ -172,6 +194,13 @@ class DriverFragment : Fragment() {
         if (isReading) {
             pdfTextToSpeechHelper.stopSpeaking()
             isReading = false
+
+        }
+
+        if (isPlaying) {
+            mMediaPlayer!!.release()
+            mMediaPlayer = null
+            isPlaying = false
         }
     }
 
@@ -180,4 +209,11 @@ class DriverFragment : Fragment() {
         super.onDestroy()
     }
 
+    override fun onStop() {
+        super.onStop()
+        if (mMediaPlayer != null) {
+            mMediaPlayer!!.release()
+            mMediaPlayer = null
+        }
+    }
 }

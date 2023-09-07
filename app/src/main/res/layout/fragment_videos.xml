@@ -64,7 +64,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_personal_video_24"
+                            android:src="@drawable/baseline_video_library_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -74,6 +74,8 @@
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image1"
                             android:text="Use of Fire Extinguisher"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -102,7 +104,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_personal_video_24"
+                            android:src="@drawable/baseline_video_library_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -112,6 +114,8 @@
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image2"
                             android:text="CPR Tutorial"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -140,7 +144,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_personal_video_24"
+                            android:src="@drawable/baseline_video_library_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -150,6 +154,8 @@
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image3"
                             android:text="Use of Phone"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />

@@ -63,7 +63,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_rule_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -72,6 +72,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Loading of a Vehicle"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -101,7 +103,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_rule_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -110,6 +112,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image2"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Unloading of a Vehicle"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -139,7 +143,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_rule_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -148,6 +152,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image3"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Product handling and associated risks"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -177,7 +183,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_rule_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -186,6 +192,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image4"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Manual handling"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -215,7 +223,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_rule_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -224,6 +232,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image5"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Vehicle Parking Rules"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -254,7 +264,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_rule_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -263,6 +273,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image6"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Hosepipe handling"
                             android:textColor="@color/black"
                             android:textSize="16sp"

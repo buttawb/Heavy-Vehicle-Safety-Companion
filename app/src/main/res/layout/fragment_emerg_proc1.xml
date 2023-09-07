@@ -1,121 +1,150 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/baseline_brightness_2_24"
-    tools:context=".emergencyprocedures.EmergProc1Fragment">
+    tools:context=".DriverFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="پروڈکٹ سپیلاج"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="• گاڑی کو کسی محفوظ جگہ پر پارک کریں۔\n• کمپنی کے ایمرجنسی رسپانس کوآرڈینیٹر اور کلائنٹ ایمرجنسی نمبر کو مطلع کریں۔\n• مقامی فائر بریگیڈ کو مطلع کریں۔\n• انجن ماسٹر سوئچ کو آپریٹ کرکے برقی نظام کو بند کر دیں، اور انجن کو بند کر دیں۔\n• دستیاب وسائل کی مدد سے سپل کو کنٹرول کرنے کی کوشش کریں، جیسے کہ سپل کٹ، صابن، دوسرے ٹینک لاری ڈرائیوروں سے بھی مدد لے سکتے ہیں (اسی سڑک پر چلتے ہوئے)\n• اس بات کو یقینی بنائیں کہ قریب میں اگنیشن کا کوئی ذریعہ نہیں ہے۔\n• علاقے کو گھیرے میں لے لیں/بریگیڈ کریں۔\n• حفاظتی شنک کو گاڑی سے 50 میٹر تک مناسب طریقے سے رکھیں\n• لوگوں کو واقعہ کی جگہ سے دور رکھنے کی کوشش کریں۔"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="Product Spillage"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="• Park the vehicle at a safe site.\n• Inform ERP coordinator of the current situation.\n• Get help from nearby Police to move the truck from the disturbed area.\n• If the mob is approaching the truck, inform them that the truck is full of gasoline which can harm you all if ignited.\n• Try to restrict the mob from coming near the truck.\n• Talk politely with the mob, no furious.\n• Update the situation to ERP coordinator."
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
 
-        <!-- Product Spillage -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingBottom="8dp"
-            android:text="@string/product_spillage"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
 
-        <!-- Create a bullet point list for the steps -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/park_the_vehicle_at_a_safe_site"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/inform_the_company_emergency_response_coordinator_and_client_emergency_number"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/inform_the_local_area_fire_brigade"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/turn_off_the_electrical_system_by_operating_the_engine_master_switch_and_shut_down_the_engine"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/try_to_control_spill_with_the_help_of_available_resources_e_g_a_spill_kit_soap_also_can_get_help_from_other_tank_lorry_drivers_moving_on_the_same_road"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/ensure_there_is_no_source_of_ignition_nearby"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/cordon_off_brigade_the_area"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/properly_place_the_safety_cone_up_to_50m_from_the_vehicle"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="@string/try_to_keep_people_away_from_the_incident_area"
-            android:textColor="#000000" />
-
-        <!-- End of Product Spillage -->
-
-        <Button
-            android:id="@+id/btnRead"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="40dp"
-            android:padding="16dp"
-            android:text="@string/start_reading"
-            android:textColor="@android:color/white" />
-
-    </LinearLayout>
-</ScrollView>
+</RelativeLayout>

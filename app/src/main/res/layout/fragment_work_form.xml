@@ -65,7 +65,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_format_color_text_24"
+                            android:src="@drawable/baseline_text_fields_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -74,6 +74,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Driver Trip Log Form"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -103,7 +105,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_format_color_text_24"
+                            android:src="@drawable/baseline_text_fields_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -112,6 +114,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image2"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="DCheck Form"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -141,7 +145,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_format_color_text_24"
+                            android:src="@drawable/baseline_text_fields_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -150,6 +154,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image3"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Stop Card Form"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -163,6 +169,85 @@
 
                     </RelativeLayout>
 
+                    <RelativeLayout
+                        android:id="@+id/wf4"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_text_fields_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image4"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="NMPI Form"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/wf5"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_text_fields_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image5"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="STL Form"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
 
                 </LinearLayout>
 

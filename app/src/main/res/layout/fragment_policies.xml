@@ -65,7 +65,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -74,6 +74,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Cell Phone Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -103,7 +105,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -112,6 +114,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image2"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Fatigue Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -141,7 +145,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -150,6 +154,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image3"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="HR Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -179,7 +185,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -188,6 +194,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image4"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="HSE Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -217,7 +225,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -226,6 +234,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image5"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Medical Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -256,7 +266,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -265,6 +275,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image6"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="PPE Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -294,7 +306,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -303,6 +315,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image7"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Reward and Sanction Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -332,7 +346,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -341,6 +355,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image8"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Seatbelt Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -370,7 +386,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -379,6 +395,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image9"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Smoking Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -408,7 +426,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_pdf"
+                            android:src="@drawable/baseline_policy_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -417,6 +435,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image10"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:text="Stop Work Policy"
                             android:textColor="@color/black"
                             android:textSize="16sp"

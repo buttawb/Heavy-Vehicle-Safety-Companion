@@ -21,17 +21,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0">
 
-            <Button
-                android:id="@+id/btn_read"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="148dp"
-                android:layout_marginEnd="169dp"
-                android:layout_marginBottom="15dp"
-                android:text="Read" />
+<!--            <Button-->
+<!--                android:id="@+id/btn_read"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginStart="148dp"-->
+<!--                android:layout_marginEnd="169dp"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:text="Read" />-->
         </com.example.hggc.PDF.PDFView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

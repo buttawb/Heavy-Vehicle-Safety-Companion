@@ -65,7 +65,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_personal_video_24"
+                            android:src="@drawable/baseline_model_training_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -75,6 +75,8 @@
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image1"
                             android:text="Basic Fire Fighting"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -103,7 +105,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_personal_video_24"
+                            android:src="@drawable/baseline_model_training_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -112,7 +114,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image2"
-                            android:text="Basic First Aid"
+                            android:text="Journey Management Plan"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -141,7 +145,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_personal_video_24"
+                            android:src="@drawable/baseline_model_training_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -150,7 +154,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="12dp"
                             android:layout_toEndOf="@+id/news_image3"
-                            android:text="Product Knowledge"
+                            android:text="Authorize / Unauthorize Passenger"
+                            android:ellipsize="end"
+                            android:maxLines="1"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -162,6 +168,167 @@
                             android:background="#CCCCCC" />
 
                     </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/train4"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_model_training_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image4"
+                            android:text="Emergency Response"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/train5"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_model_training_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image5"
+                            android:text="Loading / Unloading"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/train6"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image6"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_model_training_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image6"
+                            android:text="Spill Prevention"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/train7"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image7"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_model_training_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image7"
+                            android:text="Work at height"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
 
 
                 </LinearLayout>

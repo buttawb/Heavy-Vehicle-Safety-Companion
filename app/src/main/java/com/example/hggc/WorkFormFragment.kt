@@ -1,11 +1,11 @@
 package com.example.hggc
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
@@ -34,11 +34,47 @@ class WorkFormFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val policy1 = view.findViewById<RelativeLayout>(R.id.wf1)
-        policy1.setOnClickListener {
+        val wf1 = view.findViewById<RelativeLayout>(R.id.wf1)
+        val wf2 = view.findViewById<RelativeLayout>(R.id.wf2)
+        val wf3 = view.findViewById<RelativeLayout>(R.id.wf3)
+        val wf4 = view.findViewById<RelativeLayout>(R.id.wf4)
+        val wf5 = view.findViewById<RelativeLayout>(R.id.wf5)
+
+
+
+        wf1.setOnClickListener {
             // Navigate to Policy1Fragment when the button is clicked
             findNavController().navigate(R.id.action_workFormFragment_to_WForm1Fragment)
         }
+        wf2.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "dcheck.pdf")
+
+            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
+        }
+
+        wf3.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "stop.pdf")
+
+            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
+        }
+
+        wf4.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "nmpi.pdf")
+
+            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
+        }
+
+        wf5.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "stl.pdf")
+
+            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
+        }
+
+
     }
 
     override fun onCreateView(

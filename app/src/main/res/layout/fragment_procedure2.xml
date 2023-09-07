@@ -1,290 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/baseline_brightness_2_24"
     tools:context=".procedures.Procedure2Fragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="آف لوڈنگ کا طریقہ"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+
+                    android:text="۱. گاہک کے احاطے میں پہنچنے پر، ڈرائیور اس جگہ کا معائنہ کرے گا جہاں گاڑی کو پارک کرنے کی ضرورت ہوگی۔\n\n۲. ڈرائیور مندرجہ ذیل نکات کو یقینی بنائے گا:\n- ہائی ٹینشن وائرز\n- آگ لگنے کا کوئی بھی ذریعہ قریب میں\n- کوئی رکاوٹ (مثلاً گاڑی کھڑی)\n- خارج ہونے والی جگہ پر نرم مٹی\n- خارج ہونے والے علاقے میں ناہموار سطح\n\n۳. مندرجہ بالا نکات کو یقینی بنانے کے بعد، ڈرائیور براہ راست ڈسچارج پوائنٹ پر جائے گا، گاڑی کو پارک کرے گا، پارک بریک لگائے گا، انجن کو بند کرے گا، اور ماسٹر سوئچ کو بند کر دے گا۔\n\n۴. گاڑی پارک کرنے کے بعد، ڈرائیور کسٹمر کو ڈیلیوری دستاویز پیش کرے گا اور ان سے درج ذیل اقدامات کرنے کی درخواست کرے گا:\n- مقام چیک کریں۔\n- سیفٹی کونز کو براہ راست ٹریفک کے لیے رکھیں\n- کاغذی کارروائی کے خلاف تمام مہروں کو چیک کریں۔\n- مصنوعات کی مقدار کو چیک کریں۔\n\n۵. گاہک ٹینک کے کمپارٹمنٹ کو ڈپ ہول کے ذریعے گیج کریں گے اور “نہیں” منہول کا استعمال کرتے ہوئے ڈپ راڈ۔ یہ سفارش کی جاتی ہے کہ گاہک کے پاس پیمائش کے لیے اپنی ڈِپ راڈ ہو۔\n\n۶. پروڈکٹ کی وصولی کے وقت ڈِپ ریڈنگ کا تذکرہ انوائس پر پہلے سے درج ڈپس کے خلاف کیا جانا چاہیے۔\n\n۷. گاہک پروڈکٹ وصول کرنے والے کسٹمر کے نمائندے کو ٹرانزٹ نقصان / نفع کا حساب دینا ہوگا اور پروڈکٹ کو صاف کرنے سے پہلے انوائس پر ٹینک ٹرک ڈرائیور کے دستخط لینا ہوں گے۔\n\n۸. ڈپ / پروڈکٹ کی کمی میں کسی بھی فرق کی اطلاع بھیجے گئے ٹرمینل / متعلقہ سیلز نمائندے کو مشورے کے لیے کی جائے گی۔ فرق ڈرائیور کے اعتراف کے ساتھ معاوضے / معاوضے کے انوائس پر ظاہر ہوگا۔\n\n۹. گاہک کا نمائندہ پھر ڈرائیور/ اپنے نمائندے کو یہ مشورہ دے گا کہ وہ نلی کے دوسرے سرے کو کسٹمر ٹینک کے پائپ سے جوڑ دے اور کسٹمر کے ٹینک میں پروڈکٹ کو نکالنا شروع کرے۔\n\n۱۰. گاہک کا نمائندہ ڈیکینٹنگ سائٹ پر تمام وقت موجود رہے گا تاکہ کسی بھی حادثے سے بچا جا سکے۔\n\n۱۱. وصول کرنے والے چیمبر کے منہول کا احاطہ صرف کھولا جائے گا۔\n\n۱۲. ٹینک ٹرک ڈسچارج مکمل ہونے کے بعد، گاہک کو تصدیق کرنا ہوگا کہ “تمام” کمپارٹمنٹس خالی ہیں۔\n\n۱۳. گاہک کو پھر انوائس کو تسلیم کرنا ہوگا، ربڑ سٹیمپ کو چسپاں کرنا ہوگا، اور انوائس کی ٹھیکیدار کاپی ڈرائیور کو دینا ہوگا۔\n\n۱۴. جب گاہک چیک کر رہا ہے، ڈرائیور کو اس بات کو پورا کرنے کے لیے حاضر ہونا چاہیے کہ:\n- گاہک مطمئن ہے۔\n- علاقے میں کوئی خطرہ نہیں ہے۔\n- درست ٹینکوں کی نشاندہی کی گئی ہے۔\n۱۵. ڈرائیور کو کسی بھی حالت میں گاہک کے ساتھ بدتمیزی نہیں کرنی چاہیے۔"
+
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="UNLOADING OF VEHICLE:"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="
+    1. On arrival at the customer’s premises, the driver shall inspect the area where the vehicle shall need to park.\n\n
+    2. Driver shall ensure the following points:\n\n
+    • High tension wires\n
+    • Any source of fire ignition nearby\n
+    • Any obstruction (e.g. vehicle parked)\n
+    • Soft soil at discharging area\n
+    • Uneven surface at discharging area\n\n
+    3. After ensuring the above points, the driver shall proceed directly to the discharge point, park the vehicle, apply the parking brake, switch off the engine, and turn off the master switch.\n\n
+    4. After parking the vehicle, the driver shall present the delivery document to the customer and request them to take the following actions:\n\n
+    • Check location\n
+    • Place Safety Cones to direct traffic\n
+    • Check all seals against paperwork\n
+    • Check product quantity\n\n
+    5. Customer will Gauge the tank compartments through the dip hole and “not” the manhole using Dip Rod. It is recommended that the customer should have his own dip rod for the measurement.\n\n
+    6. Dip reading at the time of receipt of the product should be mentioned against the dips mentioned already on the invoice.\n\n
+    7. Customer rep receiving the product shall calculate Transit Loss / Gain and shall take the signature of the tank truck driver on the invoice prior to decanting the product.\n\n
+    8. Any difference in dip / product shortage shall be communicated to the shipped Terminal / concerned Sales rep for advice. The difference shall be reflected on the invoice for compensation / reimbursement with driver acknowledgment.\n\n
+    9. Customer rep shall then advise the driver/ his rep to connect the other end of the hose with the customer tank pipe and start decanting the product into the customer tank.\n\n
+    10. Customer rep shall be present all time at the decanting site to avoid any mishap.\n\n
+    11. Manhole cover of the chamber to be decanted shall be opened only.\n\n
+    12. After the completion of the tank truck discharge, the customer shall verify “all” compartments as being empty.\n\n
+    13. Customer shall then acknowledge the Invoice, affixes the rubber stamp, and hand over the contractor copy of the invoice to the driver.\n\n
+    14. While the customer is carrying out the checks, the driver should be in attendance throughout to satisfy that:\n\n
+    • The customer is satisfied\n
+    • There are no hazards in the area\n
+    • The correct tanks have been identified\n\n
+    15. The driver should not misbehave with the customer in any condition."
+                    android:textColor="#000000"
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <!-- Unloading of Vehicle -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingBottom="8dp"
-            android:text="UNLOADING OF VEHICLE:"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="1. On arrival at the customer’s premises, the driver shall inspect the area where the vehicle shall need to park."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="2. Driver shall ensure the following points:"
-            android:textColor="#000000" />
-
-        <!-- Create a bullet point list for the sub-points -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• High tension wires"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• Any source of fire ignition near-by"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• Any obstruction (e.g. vehicle parked)"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• Soft soil at discharging area"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• Uneven surface at discharging area"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="3. After ensuring the above points, the driver shall proceed directly to the discharge point, park the vehicle, apply the parking brake, switch off the engine, and turn off the master switch."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="4. After parking the vehicle, the driver shall present the delivery document to the customer and request them to take the following actions:"
-            android:textColor="#000000" />
-
-        <!-- Create a bullet point list for the sub-points -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• Check location"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• Place Safety Cones to direct traffic"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• Check all seals against paperwork"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• Check product quantity"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="5. Customer will Gauge the tank compartments through the dip hole and “not” the manhole using Dip Rod. It is recommended that the customer should have his own dip rod for the measurement."
-            android:textColor="#000000" />
-
-        <!-- Add more TextViews for each step of the unloading process -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="6. Dip reading at the time of receipt of the product should be mentioned against the dips mentioned already on the invoice."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="7. Customer rep receiving the product shall calculate Transit Loss / Gain and shall take the signature of the tank truck driver on the invoice prior to decanting the product."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="8. Any difference in dip / product shortage shall be communicated to the shipped Terminal / concerned Sales rep for advice. The difference shall be reflected on the invoice for compensation / reimbursement with driver acknowledgment."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="9. Customer rep shall then advise the driver/ his rep to connect the other end of the hose with the customer tank pipe and start decanting the product into the customer tank."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="10. Customer rep shall be present all time at the decanting site to avoid any mishap."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="11. Manhole cover of the chamber to be decanted shall be opened only."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="12. After the completion of the tank truck discharge, the customer shall verify “all” compartments as being empty."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="13. Customer shall then acknowledge the Invoice, affixes the rubber stamp, and hand over the contractor copy of the invoice to the driver."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="14. While the customer is carrying out the checks, the driver should be in attendance throughout to satisfy that:"
-            android:textColor="#000000" />
-
-        <!-- Create a bullet point list for the sub-points -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• The customer is satisfied"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• There are no hazards in the area"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="48dp"
-            android:paddingBottom="8dp"
-            android:text="• The correct tanks have been identified"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="15. The driver should not misbehave with the customer in any condition."
-            android:textColor="#000000" />
-
-        <!-- End of Unloading of Vehicle -->
-
-        <!-- End of Unloading of Vehicle -->
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
 
 
-        <Button
-            android:id="@+id/btnRead"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="40dp"
-            android:padding="16dp"
-            android:text="Start Reading"
-            android:textColor="@android:color/white" />
-
-    </LinearLayout>
-</ScrollView>
+</RelativeLayout>

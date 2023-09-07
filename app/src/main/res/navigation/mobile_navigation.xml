@@ -228,6 +228,12 @@
         <action
             android:id="@+id/action_workFormFragment_to_WForm1Fragment"
             app:destination="@id/WForm1Fragment" />
+        <action
+            android:id="@+id/action_workFormFragment_to_readerFragment"
+            app:destination="@id/readerFragment" />
+        <action
+            android:id="@+id/action_workFormFragment_to_form1Fragment"
+            app:destination="@id/form1Fragment" />
     </fragment>
     <fragment
         android:id="@+id/rewardsFragment"
@@ -327,6 +333,7 @@
     <activity
         android:id="@+id/readerFragment"
         android:name="com.example.hggc.ReaderFragment"
+        android:label="HGGC"
         tools:layout="@layout/fragment_reader" />
     <fragment
         android:id="@+id/video1Fragment"
@@ -348,6 +355,19 @@
         android:name="com.example.hggc.workforms.WForm1Fragment"
         android:label="fragment_w_form1"
         tools:layout="@layout/fragment_w_form1" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.hggc.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.hggc.AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/form1Fragment"
+        android:name="com.example.hggc.workforms.Form1Fragment"
+        android:label="fragment_form1"
+        tools:layout="@layout/fragment_form1" />
 
 
 </navigation>

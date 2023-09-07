@@ -23,10 +23,11 @@
         app:srcCompat="@drawable/logo2" />
 
     <TextView
-        android:layout_width="370dp"
-        android:layout_height="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Haji Gul Group of Companies"
+        android:textSize="20sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 

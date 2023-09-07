@@ -1,59 +1,97 @@
 package com.example.hggc
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import java.io.InputStream
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [TrainingFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class TrainingFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var pdfInputStream: InputStream // Input stream for the PDF
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_training, container, false)
+        val view = inflater.inflate(R.layout.fragment_training, container, false)
+
+        // Find the RelativeLayout with id train1
+        val train1Layout = view.findViewById<RelativeLayout>(R.id.train1)
+        val train2Layout = view.findViewById<RelativeLayout>(R.id.train2)
+        val train3Layout = view.findViewById<RelativeLayout>(R.id.train3)
+        val train4Layout = view.findViewById<RelativeLayout>(R.id.train4)
+        val train5Layout = view.findViewById<RelativeLayout>(R.id.train5)
+        val train6Layout = view.findViewById<RelativeLayout>(R.id.train6)
+        val train7Layout = view.findViewById<RelativeLayout>(R.id.train7)
+
+
+        train1Layout.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "fire.pdf")
+
+            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
+
+        }
+        // Set an OnClickListener for the train1Layout
+        train2Layout.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "jouney.pdf")
+
+            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
+
+        }
+
+        train3Layout.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "auth.pdf")
+
+            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
+
+        }
+
+        train4Layout.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "emerg.pdf")
+
+            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
+
+        }
+
+        train5Layout.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "loading.pdf")
+
+            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
+
+        }
+
+        train6Layout.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "spill.pdf")
+
+            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
+
+        }
+
+        train7Layout.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("pdfFileName", "height.pdf")
+
+            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
+
+        }
+
+        return view
     }
 
+
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment TrainingFragment.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            TrainingFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        fun newInstance() = TrainingFragment()
     }
 }

@@ -1,239 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/baseline_brightness_2_24"
     tools:context=".PenaltiesFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="خلاف ورزیوں کی نوعیت"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="۱. مقررہ رفتار سے زیادہ رفتار پر گاڑی چلانا یا سخت بریک لگانا یا غلط طریقہ سے اوور ٹیک کرنا، اور اچانک گاڑی گھمانا۔\n\n۲. ممنوعہ روٹ یا مقام پر گاڑی چلانا یا دفتر کو اطلاع دیے بغیر متبادل راستہ اختیار کرنا۔\n\n۳. ممنوعہ یا غیر منظور شدہ آرام گاہ پر 10 منٹ سے زیادہ دیر تک رکنا یا گاڑی کو سٹارٹ حالت میں کھڑا کرنا۔ بلیک اسپاٹ پر گاڑی روکنا۔\n\n۴. مقرر کردہ ڈرائیونگ اور آرام کے اوقات کی خلاف ورزی یا تھکاوٹ کے متعلق نہ بتانا یا پری ٹرپ بریفنگ نہیں لینا۔\n\n۵. ڈرائیور کا سفر کے دوران دفتر سے رابطہ نہ کرنا, ٹرپ لاگ بھرنے سے انکار, غیر مجاز ی طریقےسے گاڑی کے لیے ڈیزل خریدنا۔\n\n۶. ڈرائیور کے پاس ضروری دستاویزات کا موجود نہ ہونا یا ضروری دستاویزات پر لکھائی کرنا یا ہینڈ بک، ٹرم کارڈ کا موجود نہ ہونا۔\n\n۷. جرنی مینجمٹ(JMP ) یا کمپنی کے قواعد و ضوابط کی خلاف ورزی کرنا۔\n\n۸. گاڑی کا روزانہ معائنہ نہ کرنا، گاڑی کو اچھی حالت میں رکھنے میں کوتاہی کرنا، ڈرائیور کا گاڑی کے اندر موجود نُقص کو رپورٹ نہ کرنا یا گاڑی کا نُقص بغیر اجازت خود ٹھیک کرنے کی کوشش کرنا۔\n\n۹. ہوز پائپ لیک ہونے کی صورت میں رپورٹ نہ کرنا یا دیگر کیسی بھی قسم کی پروڈیکٹ لیکیج رپورٹ نہ کرنا۔\n\n۱۰. فائیر سلنڈر، اور دیگر ضروری آلات کو چیک نہ کرنا یا 360 ڈگری کا چکر نہ لگانا، کیبن کے اندر لوز آٹم رکھنا۔\n\n۱۱. ڈرائیور کا دفاعی ڈرائیونگ کے اصولوں کی خلاف ورزی کرنا، اشاروں کا استعمال نہ کرنا، ہارن کا غیر ضروری استعمال کرنا۔\n\n۱۲. ڈرائیور کا ٹریفک سگنل پر عمل نہ کرنا یا غلط سائیڈ پر گاڑی چلانا یا پیچھے دیکھے بغیر گاڑی دروازہ کھولنا۔\n\n۱۳. دورانِ ڈرائیونگ دیھان بٹانے والی اشیائہ کا استعمال کرنا (مثلن موبائل، ھینڈ فری، ٹیپ ریکاڈر اور دیگر)۔\n\n۱۴. ڈرائیور کا حفاظتی سامان کا استعمال نہ کرنا یا ریورس کرتے وقت دوسرے ڈرائیور کی مدد نہ لینا۔\n\n۱۵. سیفٹی کونز یا ارتھ کیبل کا استعمال نہ کرنا یا سائیٹ پر ارتھ پوائنٹ کو چیک نہ کرنا یا کسٹمر کے ساتھ بد تمیزی سے پیش آنا۔\n\n۱۶. خالی کرنے والی چیک لسٹ کا مکمل نہ بھرنا یا انٹر لاک اور ویل چوک کا استعمال نہ کرنا۔\n\n۱۷. ڈرائیور کا سٹاپ ورک پالیسی عمل پیر ا نہ ہونا یا پلان کی ترتیب کے بر خلاف گاڑی کا بھرنا اور خالی کرنا۔\n\n۱۸. ظاہری حالت خراب ہونایا صفائی ستھرائی نہ ہونا یا گاڑی کو صاف ستھرا نہ رکھنا یا اپنی بیماری کو چھپانا۔\n\n۱۹. ڈرائیور کا دوران سفر ٹینک کے ڈھکنے کھلے رکھنا، کسی حادثہ کی اطلاع نہ دینا یا امکانی حادثہ کی رپورٹ نہ دینا۔\n\n۲۰. ڈرائیور کا دوسرے ڈرائیور حضرات سے بدتمیزی یا تنگ مزاجی یا دوسروں سے لڑئی جھگڑا کرنا۔\n\n۲۱. ڈرائیور کا فرسٹ ایڈ اور اسپل کٹ کا صحیح نہ رکھنا۔\n\n۲۲. ڈرائیور کا ٹول بکس میٹنگ، اور دیگر ٹرینگ سیشن میں نہ آنا۔
+    پہلی تمام وائیلشن میں پر آپ کو وارنگ دی جائے گی دوسری وائیلیشن میں آپ کو لیٹر دیا جائے گا اور تیسری وائیلیشن پر آپ کو سروس سے ختم کر دی جائے گی۔"
+                    android:textColor="#000000"
+
+
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="NATURE OF VIOLATIONS:"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="
+    • Driving at a speed higher than the prescribed speed or applying hard brakes or overtaking the wrong way, and suddenly turning the car.\n\n
+    • Driving on a prohibited route or location or taking an alternate route without informing the office.\n\n
+    • Stopping for more than 10 minutes at a prohibited or unapproved resting place or parking the vehicle in a starting position. Stopping the car at the black spot.\n\n
+    • Don't tell or take pre-trip briefings about violations or fatigue of scheduled driving and rest hours.\n\n
+    • Driver not contacting the office while traveling, refusing to fill the trip log, buying diesel for the vehicle in an unauthorized manner.\n\n
+    • The driver does not have the necessary documents or writing on the necessary documents or not having a handbook, term card.\n\n
+    • Violating The JMP Or Company Rules and Regulations.\n\n
+    • Not inspecting the vehicle daily, neglecting to keep the vehicle in good condition, the driver not reporting the defect inside the vehicle or trying to fix the vehicle's fault himself without permission.\n\n
+    • Not reporting a hose pipe leak or any other kind of product leakage.\n\n
+    • Not checking fire cylinders, and other necessary equipment or circling 360 degrees, placing loose items inside the cabin.\n\n
+    • Violation of driver's defense driving rules, not using signals, unnecessary use of horns.\n\n
+    • Driver not following traffic signals or driving on the wrong side or opening the car door without looking back.\n\n
+    • Using hand-breaking items while driving (triangle mobile, hand-free, tape recorder, and others).\n\n
+    • The driver does not use protective gear or take the help of another driver when reversing.\n\n
+    • Not using safety cones or earth cables or not checking earth points on the site or misbehaving with the customer.\n\n
+    • Not filling the emptying checklist completely or not using interlock and well square.\n\n
+    • The driver's stop work policy process is not compliant or the vehicle is filled and emptied against the plan setting.\n\n
+    • Poor appearance or lack of cleanliness or not keeping the car clean or hiding your illness.\n\n
+    • The driver should keep the covers of the tank open during the journey, do not report any accident or report a possible accident.\n\n
+    • The driver's misbehavior or narrow-mindedness with other drivers or fighting with others.\n\n
+    • Don't keep the driver's first aid and spill kit right.\n\n
+    • Driver not attending toolbox meetings, and other training sessions."
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
 
-        <!-- Nature of Violations -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingBottom="8dp"
-            android:text="NATURE OF VIOLATIONS:"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
 
-        <!-- Create a bullet point list for the nature of violations -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Driving at a speed higher than the prescribed speed or applying hard brakes or overtaking the wrong way, and suddenly turning the car."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Driving on a prohibited route or location or taking an alternate route without informing the office."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Stopping for more than 10 minutes at a prohibited or unapproved resting place or parking the vehicle in a starting position. Stopping the car at the black spot."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Don't tell or take pre-trip briefings about violations or fatigue of scheduled driving and rest hours."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Driver not contacting the office while traveling, refusing to fill the trip log, buying diesel for the vehicle in an unauthorized manner."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• The driver does not have the necessary documents or writing on the necessary documents or not having a handbook, term card."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Violating The JMP Or Company Rules and Regulations."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Not inspecting the vehicle daily, neglecting to keep the vehicle in good condition, the driver not reporting the defect inside the vehicle or trying to fix the vehicle's fault himself without permission."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Not reporting a hose pipe leak or any other kind of product leakage."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Not checking fire cylinders, and other necessary equipment or circling 360 degrees, placing loose items inside the cabin."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Violation of driver's defense driving rules, not using signals, unnecessary use of horns."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Driver not following traffic signals or driving on the wrong side or opening the car door without looking back."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Using hand-breaking items while driving (triangle mobile, hand-free, tape recorder, and others)."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• The driver does not use protective gear or take the help of another driver when reversing."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Not using safety cones or earth cables or not checking earth points on the site or misbehaving with the customer."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Not filling the emptying checklist completely or not using interlock and well square."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• The driver's stop work policy process is not compliant or the vehicle is filled and emptied against the plan setting."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Poor appearance or lack of cleanliness or not keeping the car clean or hiding your illness."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• The driver should keep the covers of the tank open during the journey, do not report any accident or report a possible accident."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• The driver's misbehavior or narrow-mindedness with other drivers or fighting with others."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Don't keep the driver's first aid and spill kit right."
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8dp"
-            android:paddingLeft="32dp"
-            android:paddingBottom="8dp"
-            android:text="• Driver not attending toolbox meetings, and other training sessions."
-            android:textColor="#000000" />
-
-        <!-- End of Nature of Violations -->
-
-        <Button
-            android:id="@+id/btnRead"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="40dp"
-            android:padding="16dp"
-            android:text="Start Reading"
-            android:textColor="@android:color/white" />
-
-    </LinearLayout>
-</ScrollView>
+</RelativeLayout>
