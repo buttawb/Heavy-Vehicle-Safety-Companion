@@ -44,7 +44,7 @@ class WorkFormFragment : Fragment() {
 
         wf1.setOnClickListener {
             // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_workFormFragment_to_WForm1Fragment)
+            findNavController().navigate(R.id.action_workFormFragment_to_form1Fragment)
         }
         wf2.setOnClickListener {
             val bundle = Bundle()

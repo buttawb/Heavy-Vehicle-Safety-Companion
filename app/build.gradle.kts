@@ -11,8 +11,8 @@ android {
         applicationId = "com.hggc.driverapp"
         minSdk = 24
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.2"
+        versionCode = 4
+        versionName = "1.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -59,6 +59,7 @@ dependencies {
     api("com.github.barteksc:pdfium-android:1.9.0")
     implementation("com.itextpdf:itextg:5.5.10")
     implementation("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
+    implementation("net.sourceforge.jexcelapi:jxl:2.6.12")
 
 
 }
