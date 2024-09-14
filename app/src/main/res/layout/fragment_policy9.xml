@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".policies.Policy9Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="سگریٹ نوشی کی پالیسی"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="۱۔ گاڑی چلاتے ہوئے، ڈیپو میں، پمپ میں یا کسی بھی لوڈنگ آف لوڈنگ کی جگہ پر سگریٹ نوشی سختی سے منع ہے۔\n۲۔ گاڑی کے اطراف بھی سگریٹ نوشی منع ہے۔\n۳۔ آفس اور ورک شاپ میں بھی سگریٹ نوشی منع ہے۔\n۴۔ آفس اور ورک شاپ کی مقرر کردہ جگہ پر جا کر سگریٹ نوشی کی جاسکتی ہے۔"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="Smoking Policy"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="According to medical evidence, smoking is injurious to health, therefore HAJI GUL GROUP OF COMPANIES strictly follows Smoking Policy and does not allow any person to smoke in the company premises.\n\n
+    1. Smoking is prohibited in all HGGC offices, Base, Depot, customer site, and while present in the vehicle.\n\n
+    2. Smoking, including e-cigarettes is prohibited in all workplaces of the company.\n\n
+    3. All staff and visitors are advised to keep the company's workplaces non-smoking.\n\n
+    4. If any visitors or staff still want to smoke, then smoking can only be done in the designated smoking area.\n\n
+    5. Smoking inside the company's car/cabin violates the company policy."
+                    android:textColor="#000000"
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>
+
+

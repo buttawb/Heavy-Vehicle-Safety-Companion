@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".policies.Policy1Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="سیل فون کے استعمال کی پالیسی"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="۱۔ کام کے دوران، ڈیپو میں، پمپ میں یا گاڑی چلاتے ہوئے فون کا استعمال سختی سے منع ہے۔\n\n۲۔ کسی بھی لوڈنگ یا آف لوڈنگ کی جگہ پر فون کا استعمال منع ہے۔\n\n۳۔ اگر گاڑی چلاتے ہوئے فون آ جائے ضروری ہو تو گاڑی روک کے فون سن سکتے ہیں یا ساتھ موجود دوسرے ڈرائیور کو فون دے دیں"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="Cell Phone Policy"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="Misuse of a cell phone is a safety hazard, which is why HAJI GUL GROUP OF COMPANIES has adopted a clear policy on the usage of cell phones.\n\n
+    Our mobile phone policy is:\n
+    1. The use of cell phones/smartwatches/pagers/hands-free or similar electronic devices while calling, answering, sending text messages, or any other use while driving is strictly prohibited.\n
+    2. The use of cell phones/smartwatches/pagers/hands-free or similar electronic devices while handling petroleum products or in the area where it is being handled is strictly prohibited.\n
+    3. Usage of cell phones or similar electronic devices in the cabin by a co-driver or helper is not a violation, barring inside the terminal or any other space where cell phone usage is prohibited.\n
+    4. All employees must intervene when they observe any violation of this policy and report the matter to the company."
+                    android:textColor="#000000"
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>

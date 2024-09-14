@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".RewardsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="ڈرائیور کی تشخیص کا طریقہ کار"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="۱. یہ طریقہ کار کمپنی کے تمام فعال ٹینک لاری ڈرائیوروں پر لاگو ہوگا جنہوں نے DDC اور دیگر متعلقہ تربیت مکمل کی ہے۔\n\n۲. ڈرائیور لیگ سسٹم کے لیے سہ ماہی کارکردگی پر 2 ڈرائیوروں کا جائزہ لیا جائے گا اور انہیں درج ذیل معیار کے مطابق میرٹ پوائنٹس دیے جائیں گے:\n
+       - تمام میرٹ پوائنٹس KPI شیٹ میں ریکارڈ کیے جائیں گے جب پوائنٹس اسکورنگ کے معیار کے مطابق دیئے جائیں گے۔ شیٹ کو آپریشن مینیجر/سپروائزر کے ذریعے اپ ڈیٹ رکھا جائے گا۔\n\n۳. انعام یافتہ پوائنٹس کو تین زمروں میں تقسیم کیا جائے گا:\n
+       ❖ 1st: وہ لوگ جو ایک سہ ماہی میں معیار کے اسکور کا سب سے زیادہ % اسکور کرتے ہیں۔\n
+       ❖ 2nd: وہ لوگ جو ایک سہ ماہی میں معیار کے اسکور کا دوسرا سب سے زیادہ % اسکور کرتے ہیں۔\n
+       ❖ تیسرا: ایک سہ ماہی میں معیار کے اسکور کا تیسرا سب سے زیادہ % اسکور کرنے والے۔\n\n۴. درج ذیل مراعات ان لوگوں کو دی جائیں گی جو مندرجہ بالا زمروں میں محفوظ ہیں:\n
+       ❖ پہلی پوزیشن: ماہانہ تنخواہ کا %75 دیا جائے گا۔\n
+       ❖ دوسری پوزیشن: ماہانہ تنخواہ کا %50 دیا جائے گا۔\n
+       ❖ تیسری پوزیشن: ماہانہ تنخواہ کا 25% دیا جائے گا۔"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="Driver Evaluation Procedure"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="1. This procedure shall be applicable to all active tank lorry drivers of the company who have completed DDC and other related trainings.\n\n2. Drivers shall be evaluated for Driver League System on quarterly performance, and merit points will be awarded to them as per the following criteria:\n
+       ❖ All merit points will be recorded in KPI Sheet when points are awarded as per scoring criteria. The sheet will be kept updated by the Operation Manager/Supervisor.\n\n3. Awarded points shall be classified into three categories:\n
+       ❖ 1st: Those scoring the highest % of criteria score in a quarter.\n
+       ❖ 2nd: Those scoring 2nd highest % of criteria score in a quarter.\n
+       ❖ 3rd: Those scoring 3rd highest % of criteria score in a quarter.\n\n4. Following incentives shall be awarded to those who secure in the above categories:\n
+       ❖ 1st Position: shall be awarded 75% of the monthly salary.\n
+       ❖ 2nd Position: shall be awarded 50% of the monthly salary.\n
+       ❖ 3rd Position: shall be awarded 25% of the monthly salary."
+
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>

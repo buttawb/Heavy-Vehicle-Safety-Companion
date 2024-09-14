@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".procedures.Procedure5Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="گاڑیوں کی پارکنگ کے قوانین"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="۱. ڈرائیور کو گاڑی پارک کرنے سے پہلے پارکنگ ایریا کا جائزہ لینا چاہیے۔ ذیل میں چند چیکس ہیں جن کو انجام دینے کی ضرورت ہے:\n
+    • کیا ریسٹ ایریا تک مناسب رسائی ہے، مناسب اپروچ روڈ کے ساتھ؟\n
+    • کیا سائٹ کے پاس گاڑی کو محفوظ طریقے سے پارک کرنے کے لیے کافی پارکنگ کی جگہیں ہیں؟\n
+    • کیا سائٹ پر ڈرائیوروں کے لیے آرام کرنے کی کافی سہولت موجود ہے؟\n
+    • کیا زمین گاڑی کا بوجھ برداشت کرنے کے لیے کافی ٹھوس ہے؟\n
+    • کیا پارکنگ میں مناسب روشنی ہے؟\n
+    • کیا آس پاس کوئی ایندھن اسٹیشن ہے؟\n
+    • کیا سائٹ پر دیکھ بھال کی کوئی سہولت دستیاب ہے؟\n
+    • کیا قریبی علاقے میں شعلوں یا ویلڈنگ کا کوئی خطرہ ہے؟\n
+    • کیا اس جگہ پر مناسب سیکیورٹی دستیاب ہے؟\n\n۲. اگر مذکورہ بالا تمام خطرات کا جائزہ لیا جائے اور کوئی مسئلہ نہیں پایا جاتا ہے، تو ڈرائیور اپنی گاڑی سائٹ پر کھڑی کر سکتا ہے۔\n\n۳. پارکنگ کے بعد:\n
+    • ہمیشہ اپنے دروازے بند رکھیں\n
+    • اپنے ونڈوز کو رول اپ اور لاک کریں\n
+    • قیمتی اشیاء کی بصیرت کو نہ چھوڑیں - (فون، پیجرز، پرس، بٹوے، وغیرہ، چوری کی دعوت دیتے ہیں)\n
+    • پارکنگ کی سہولت پر پہنچنے سے پہلے قیمتی سامان اور پیکجوں کو ٹرنک میں یا نظروں سے اوجھل رکھیں۔\n
+    • گاڑی کو بغیر توجہ کے مت چھوڑیں۔\n
+    • اگر آپ کے پاس اختیار ہے، تو اچھی طرح سے روشن پارکنگ کی جگہ کا انتخاب کریں۔\n
+    • اپنی گاڑی میں یا اس پر فالتو چابی نہ چھپائیں - اسے مل سکتا ہے۔\n
+    • آگاہ رہیں اور HGGC ایمرجنسی # 0346-6381599 پر کال کرکے یا ہنگامی صورتحال کے لیے 15 ڈائل کرکے فوری طور پر کسی بھی مشکوک سرگرمی کی اطلاع دیں۔
+    • کبھی بھی کسی غیر مجاز شخص کو سواری کی پیشکش نہ کریں۔"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="VEHICLE PARKING RULES"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="1. The driver should assess the parking area before parking the vehicle. Following are few checks that need to be performed:\n
+• Is there proper access to the rest area, with an appropriate approach road?\n
+• Has the site got enough parking spaces to park the vehicle safely?\n
+• Has the site got enough facility for drivers to take rest?\n
+• Is the land solid enough to bear the vehicle load?\n
+• Is there proper lighting in the parking?\n
+• Is there any fuel station nearby?\n
+• Is there any maintenance facility available on the site?\n
+• Is there any hazard of flames or welding in the nearby area?\n
+• Is there proper security available in that place?\n\n
+2. If all of the above-mentioned hazards are assessed and no problem is found, then the driver can park his vehicle at the site.\n\n
+3. After Parking:\n
+• Always Lock Your Doors\n
+• Roll Up and Lock Your Windows\n
+• Do Not Leave Valuables Insight - (phones, pagers, purses, wallets, etc., invite theft)\n
+• Put valuables and packages in the trunk or out of sight before arriving at the parking facility.\n
+• Do Not Leave the vehicle unattended.\n
+• If you have the option, choose a well-lit parking spot.\n
+• Do not hide a spare key in or on your vehicle - it can be found.\n
+• Be aware and report any suspicious activity immediately by calling HGGC Emergency # 0346-6381599 or for emergencies dial 15\n
+• Never offer rides to an unauthorized person."
+                    android:textColor="#000000"
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>

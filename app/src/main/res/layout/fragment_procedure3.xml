@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".procedures.Procedure3Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="پروڈکٹ ہینڈلنگ اور اس سے وابستہ خطرات"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="١۔ پروڈکٹ کو صحیح لیبل والے کنٹینرز میں اسٹور کریں\n\n ٢۔ پروڈکٹ لیبلز پر کسی بھی ہدایات پر عمل کریں\n\n ٣۔ صحیح حفاظتی لباس پہنیں\n\n ٤۔ بیریئر کریم اور/یا دستانے استعمال کریں\n\n ٥۔ جلد کے رابطے سے گریز کریں\n\n ٦۔ سانس لینے والے بخارات سے پرہیز کریں۔\n\n ٧۔ کبھی نہ نگلیں / منہ کا گھونٹ\n\n ٨۔ کوئی کھانا/سگریٹ نوشی نہیں\n\n ٩۔ اگنیشن کے تمام ذرائع کو دور رکھیں\n\n ١٠۔ اگر پروڈکٹ آپ کی جلد سے رابطہ کرتا ہے، تو صابن سے ہاتھ دھو کر اسے جلد سے ہٹا دیں\n\n ١١۔ جلد سے تیل/چکنائی ہٹانے کے لیے پروڈکٹ کا استعمال نہ کریں\n\n ١٢۔ پروڈکٹ کو سنبھالنے کے بعد، کھانے، پینے، بیت الخلا کی ضروریات سے پہلے ہاتھ اور چہرہ دھوئیں\n\n ١٣۔ کٹ اور خروںچ کے لیے ابتدائی طبی امداد حاصل کریں\n\n ١٤۔ جلد کی غیر معمولی حالتوں کے لیے طبی مشورہ حاصل کریں\n\n ١٥۔ پروڈکٹ ہینڈلنگ کے لیے درج ذیل PPE استعمال کریں:\n\n
+    • دستانے (گونٹلیٹس، تھرمل طور پر موصل، مائعات کے لیے غیر محفوظ)\n\n
+    • حفاظتی جوتے\n\n
+    • چشمیں\n\n
+    • سائیڈ شیلڈز\n\n
+    • پورے چہرے کی شیلڈز\n\n
+    • ٹھوڑی گارڈ کے ساتھ حفاظتی ہیلمٹ\n\n
+    • کپڑے (سوتی / قدرتی، مخالف جامد)\n\n١٦۔ مزید تفصیلات کے لیے، ڈرائیور کی ہینڈ بک پڑھیں، جو ہر گاڑی میں دستیاب ہے۔"
+                    android:textColor="#000000"
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="Product Handling and Associated Risks"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="1. Store product in correctly labeled containers\n\n2. Follow any instructions on product labels\n\n3. Wear correct protective clothing\n\n4. Use barrier cream and/or gloves\n\n5. Avoid skin contact\n\n6. Avoid breathing vapors.\n\n7. Never swallow / mouth siphoning\n\n8. No eating/smoking\n\n9. Keep all ignition sources away\n\n10. If the product makes contact with your skin, remove it from the skin promptly by washing hands with soap\n\n11. Do not use the product to remove oil/grease from the skin\n\n12. After handling the product, Wash hands and face before eating, drinking, toilet needs\n\n13. Get first aid for cuts and scratches\n\n14. Get medical advice for abnormal skin conditions\n\n15. Use the following PPE for product handling:\n\n
+    • Gloves (gauntlets, thermally insulated, impervious to liquids)\n\n
+    • Safety boots\n\n
+    • Goggles\n\n
+    • Side shields\n\n
+    • Full-face shields\n\n
+    • Safety helmets with chin guard\n\n
+    • Clothes (cotton / natural, anti-static)\n\n16. For more details, read the driver’s handbook, which is available in every vehicle."
+                    android:textColor="#000000"
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".procedures.Procedure1Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="لوڈ نگ کا طریقہ"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="۱۔ لوڈ نگ سے پہلے گاڑی کے کاغذات چیک کرلیں\n\n۲۔ گاڑی لوڈنگ پوائینٹ پر لے جائیں\n\n۳۔ گاڑی کا انجن بند کردیں اور مین سوئیچ بھی آف کر دیں\n\n۴۔ گاڑی کی پارک بریک لگا دیں\n\n۵۔ ویل چوک لگا دیں\n\n۶۔ ارتھ کی تار لگا دیں\n\n۷۔ والوز بند کر دیں\n\n۸۔ سیفٹی ہارنس پہن کر ہک کر لیں\n\n۹۔ ٹنک کے مین ہول ڈھکن کھول دیں اور دیکھیں اندر ٹنک صاف ہے کوئی چیز یا باقی ماندہ پرڈکٹ موجود تو نہیں ہے؟ اگر کوئی گندگی ہے تو دوبارہ جا کر صاف کروالیں\n\n۱۰۔ ہوز لگا کر سوپروائیز کو بتا دیں\n\n۱۱۔ لوڈنگ شروع کروائیں\n\n۱۲۔ پروڈکٹ کی ڈیپ کریں گے اور ٹمپریچر لکھ لیں گے\n\n۱۳۔ لوڈ نگ مکمل ہونے کے بعد سیل لگوالیں اور ساری سیل چیک کرلیں کہ درست ہیں اگر کوئی رہ گئی ہو تو وہ بھی لگوا لیں\n\n۱۴۔ پروڈکٹ سلیکٹر لگا دیں\n\n۱۵۔ انوائیس لے لیں اور چیک کر لیں\n\n۱۶۔ احتیاط سے گاڑی چلائیں"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="Loading of Vehicle"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="1. Before loading the vehicle, the driver must collect all delivery documentation for the delivery about to be Loaded.\n\n2. Checks all information is correct, the Driver then takes both the paperwork and vehicle to the filling gantry.\n\n3. The driver is directed to the correct filling bay, then the driver moves the vehicle into the required/assigned loading gantry.\n\n4. Apply the parking brake.\n\n5. Switch off the engine.\n\n6. Turn off the master switch where appropriate.\n\n7. Connect the bonding wire to the bare metal or bounding lug of the Tank body (First on. Last off).\n\n8. Check product ID tags and fix as per the product being loaded.\n\n9. Close the outlets and internal valves.\n\n10. Open the Manhole covers.\n\n11. Inspect the compartments to ensure that they are empty. If a compartment is not empty, moved out the truck to decant/empty out the chamber.\n\n12. Insert the filling hose right down to the bottom of the appropriate compartment.\n\n13. Inform filling supervisor to start loading.\n\n14. Open the appropriate valves to commence filling, manhole must not be jammed open.\n\n15. Stand upwind of the loading compartment where possible, if not face away from vapors.\n\n16. If any product is spilled during the loading operation, all operations must cease until the spillage has been removed.\n\n17. The vehicle engine must not be started until the spilled product is removed.\n\n18. All spills to be reported to the depot supervisor.\n\n19. After the vehicle is loaded, Seal all vehicle outlets where appropriate.\n\n20. Confirm product indicators on each compartment.\n\n21. Check paperwork for the route.\n\n22. Leave the terminal slowly.\n\n23. Drive safely to the delivery."
+                    android:textColor="#000000"
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>

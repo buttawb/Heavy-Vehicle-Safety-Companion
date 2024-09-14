@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baseline_brightness_2_24"
+    tools:context=".policies.Policy4Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <!-- Urdu Container -->
+        <ScrollView
+            android:id="@+id/urdu_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/urduheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="صحت ، حفاظت ،تحفظ اور  ماحول  کی پالیسی"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/secondHeadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/urduheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/urducontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondHeadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="۱. ہم یقین رکھتے ہیں کہ صحت، تحفظ اور ماحول سے زیادہ اہم کوئی چیز نہیں ہے۔\n\n
+    ۲. کمپنی کے تمام ملازمین پر لازم ہے کہ وہ سیفٹی اور ماحول کا خاص خیال رکھیں اور ایسا کوئی کام نہ کریں جس سے کسی قسم کی صحت، تحفظ اور ماحول پر منفی اثرات پڑیں۔\n\n
+    ۳. صحت مند افراد سے ہی صحت مند معاشرہ تشکیل پاتا ہے، اس لئے کمپنی اپنے تمام ملازمین کی صحت پر خصوصی توجہ دیتی ہے۔\n\n
+    ۴. کمپنی اپنی تمام گاڑیوں کو مکمل فٹ اور تمام سیفٹی آلات سے لیس رکھتی ہے۔\n\n
+    ۵. کمپنی ماحول کو صحت مند رکھنے اور اس کو کسی قسم کی آلودگی نہیں پہنچانے کو بھی اپنا اولین مقصد سمجھتی ہے۔\n\n
+    ۶. کمپنی اپنی گاڑیوں کی منٹینس پر خصوصی توجہ دیتی ہے اور ماحول دوست اقدامات کی حوصلہ افزائی کرتی ہے۔\n\n
+    ۷. اس بات کو مد نظر رکھتے ہوئے اس ذمان میں کمپنی کی تمام پالیسیوں پر سختی سے عمل درآمد کروایا جاتا ہے۔\n\n
+    ۸. نگرانی کا ایک ایسا انتظامی نظام نافذ کرنا جو ہماری HSE اور سماجی کارکردگی کو بہتر کرے۔\n\n
+    ۹. ماحول کو آلودہ ہونے سے بچانا ہے۔\n\n
+    ۱۰. کام سے متعلقہ تمام اقسام کے حادثات کو بچانا ہے۔"
+                    android:textColor="#000000"
+
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- English Container -->
+        <ScrollView
+            android:id="@+id/english_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/engheadingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:text="HSE Policy"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/engcontentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/engheadingTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"
+                    android:text="We believe that nothing is more important than Health, Safety, and Environment. Every person of the company is responsible to think about HSE before commencing any job.\n\n
+    1. No job will be performed that exerts a negative impact on HSE.\n
+    2. A healthy people build a healthy society; therefore, all employees must maintain and care for their health.\n
+    3. All employees must keep the environment free from pollution.\n
+    4. All employees must cooperate to maintain the vehicles in such a way that they must not pollute the environment.\n
+    5. All HSE policies must be implemented to improve the HSE of the company and play a dominant role in building a safe society."
+                    android:textColor="#000000"
+
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Button below both containers -->
+
+    </FrameLayout>
+
+    <!-- Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_voice_over_off_24"
+        app:layout_anchor="@id/mainframe"
+        app:layout_anchorGravity="bottom|end"
+        app:tint="@android:color/white" />
+
+
+</RelativeLayout>

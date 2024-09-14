@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Explore">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_menu"
+                        android:icon="@drawable/baseline_double_arrow_24"
+                        android:title="Main" />
+
+                    <item
+                        android:id="@+id/nav_gallery"
+                        android:icon="@drawable/baseline_emergency_24"
+                        android:title="Emergency Contact Numbers" />
+
+
+                </group>
+            </menu>
+        </item>
+
+        <!-- Language Toggle Switch -->
+        <item android:title="Who We Are">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/aboutUsFragment"
+                        android:icon="@drawable/baseline_person_24"
+                        android:title="About Us" />
+                </group>
+
+            </menu>
+        </item>
+
+
+    </group>
+</menu>

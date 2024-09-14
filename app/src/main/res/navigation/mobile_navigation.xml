@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.hggc.ui.home.HomeFragment"
+
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_menu"
+            app:destination="@id/nav_menu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.hggc.ui.gallery.GalleryFragment"
+
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.example.hggc.ui.menu.MenuFragment"
+
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_nav_menu_to_introFragment"
+            app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_driverFragment"
+            app:destination="@id/driverFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_policiesFragment"
+            app:destination="@id/policiesFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_emergencyProceduresFragment"
+            app:destination="@id/emergencyProceduresFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_proceduresFragment"
+            app:destination="@id/proceduresFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_trainingFragment"
+            app:destination="@id/trainingFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_workFormFragment"
+            app:destination="@id/workFormFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_videosFragment"
+            app:destination="@id/videosFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_restArea"
+            app:destination="@id/restArea" />
+        <action
+            android:id="@+id/action_nav_menu_to_readerFragment"
+            app:destination="@id/readerFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_journeyPlanFragment"
+            app:destination="@id/journeyPlanFragment" />
+        <action
+            android:id="@+id/action_nav_menu_to_rewardsAndPenaltiesFragment"
+            app:destination="@id/rewardsAndPenaltiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.hggc.IntroFragment"
+
+        tools:layout="@layout/fragment_intro" />
+    <fragment
+        android:id="@+id/driverFragment"
+        android:name="com.example.hggc.DriverFragment"
+
+        tools:layout="@layout/fragment_driver" />
+    <fragment
+        android:id="@+id/policiesFragment"
+        android:name="com.example.hggc.PoliciesFragment"
+
+        tools:layout="@layout/fragment_policies">
+        <action
+            android:id="@+id/action_policiesFragment_to_policy1Fragment"
+            app:destination="@id/policy1Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy2Fragment"
+            app:destination="@id/policy2Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy3Fragment"
+            app:destination="@id/policy3Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy4Fragment"
+            app:destination="@id/policy4Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy5Fragment"
+            app:destination="@id/policy5Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy6Fragment"
+            app:destination="@id/policy6Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy7Fragment"
+            app:destination="@id/policy7Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy8Fragment"
+            app:destination="@id/policy8Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy9Fragment"
+            app:destination="@id/policy9Fragment" />
+        <action
+            android:id="@+id/action_policiesFragment_to_policy10Fragment"
+            app:destination="@id/policy10Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/policy1Fragment"
+        android:name="com.example.hggc.policies.Policy1Fragment"
+
+        tools:layout="@layout/fragment_policy1" />
+    <fragment
+        android:id="@+id/policy2Fragment"
+        android:name="com.example.hggc.policies.Policy2Fragment"
+
+        tools:layout="@layout/fragment_policy2" />
+    <fragment
+        android:id="@+id/policy3Fragment"
+        android:name="com.example.hggc.policies.Policy3Fragment"
+
+        tools:layout="@layout/fragment_policy3" />
+    <fragment
+        android:id="@+id/policy4Fragment"
+        android:name="com.example.hggc.policies.Policy4Fragment"
+
+        tools:layout="@layout/fragment_policy4" />
+    <fragment
+        android:id="@+id/policy5Fragment"
+        android:name="com.example.hggc.policies.Policy5Fragment"
+
+        tools:layout="@layout/fragment_policy5" />
+    <fragment
+        android:id="@+id/policy6Fragment"
+        android:name="com.example.hggc.policies.Policy6Fragment"
+
+        tools:layout="@layout/fragment_policy6" />
+    <fragment
+        android:id="@+id/policy7Fragment"
+        android:name="com.example.hggc.policies.Policy7Fragment"
+
+        tools:layout="@layout/fragment_policy7" />
+    <fragment
+        android:id="@+id/policy8Fragment"
+        android:name="com.example.hggc.policies.Policy8Fragment"
+
+        tools:layout="@layout/fragment_policy8" />
+    <fragment
+        android:id="@+id/policy9Fragment"
+        android:name="com.example.hggc.policies.Policy9Fragment"
+
+        tools:layout="@layout/fragment_policy9" />
+    <fragment
+        android:id="@+id/policy10Fragment"
+        android:name="com.example.hggc.policies.Policy10Fragment"
+
+        tools:layout="@layout/fragment_policy10" />
+    <fragment
+        android:id="@+id/emergencyProceduresFragment"
+        android:name="com.example.hggc.EmergencyProceduresFragment"
+
+        tools:layout="@layout/fragment_emergency_procedures">
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc1Fragment"
+            app:destination="@id/emergProc1Fragment" />
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc2Fragment"
+            app:destination="@id/emergProc2Fragment" />
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc3Fragment"
+            app:destination="@id/emergProc3Fragment" />
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc4Fragment"
+            app:destination="@id/emergProc4Fragment" />
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc5Fragment"
+            app:destination="@id/emergProc5Fragment" />
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc6Fragment"
+            app:destination="@id/emergProc6Fragment" />
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc6Fragment2"
+            app:destination="@id/emergProc6Fragment" />
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc7Fragment"
+            app:destination="@id/emergProc7Fragment" />
+        <action
+            android:id="@+id/action_emergencyProceduresFragment_to_emergProc8Fragment"
+            app:destination="@id/emergProc8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/proceduresFragment"
+        android:name="com.example.hggc.ProceduresFragment"
+
+        tools:layout="@layout/fragment_procedures">
+        <action
+            android:id="@+id/action_proceduresFragment_to_procedure1Fragment"
+            app:destination="@id/procedure1Fragment" />
+        <action
+            android:id="@+id/action_proceduresFragment_to_procedure2Fragment"
+            app:destination="@id/procedure2Fragment" />
+        <action
+            android:id="@+id/action_proceduresFragment_to_procedure3Fragment"
+            app:destination="@id/procedure3Fragment" />
+        <action
+            android:id="@+id/action_proceduresFragment_to_procedure4Fragment"
+            app:destination="@id/procedure4Fragment" />
+        <action
+            android:id="@+id/action_proceduresFragment_to_procedure5Fragment"
+            app:destination="@id/procedure5Fragment" />
+        <action
+            android:id="@+id/action_proceduresFragment_to_procedure6Fragment"
+            app:destination="@id/procedure6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="com.example.hggc.TrainingFragment"
+
+
+        tools:layout="@layout/fragment_training">
+        <action
+            android:id="@+id/action_trainingFragment_to_readerFragment"
+            app:destination="@id/readerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workFormFragment"
+        android:name="com.example.hggc.WorkFormFragment"
+
+        tools:layout="@layout/fragment_work_form" >
+        <action
+            android:id="@+id/action_workFormFragment_to_WForm1Fragment"
+            app:destination="@id/WForm1Fragment" />
+        <action
+            android:id="@+id/action_workFormFragment_to_readerFragment"
+            app:destination="@id/readerFragment" />
+        <action
+            android:id="@+id/action_workFormFragment_to_form1Fragment"
+            app:destination="@id/form1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardsFragment"
+        android:name="com.example.hggc.RewardsFragment"
+
+        tools:layout="@layout/fragment_rewards" />
+    <fragment
+        android:id="@+id/penaltiesFragment"
+        android:name="com.example.hggc.PenaltiesFragment"
+
+        tools:layout="@layout/fragment_penalties" />
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.example.hggc.VideosFragment"
+
+        tools:layout="@layout/fragment_videos">
+        <action
+            android:id="@+id/action_videosFragment_to_video1Fragment"
+            app:destination="@id/video1Fragment" />
+        <action
+            android:id="@+id/action_videosFragment_to_video2Fragment"
+            app:destination="@id/video2Fragment" />
+        <action
+            android:id="@+id/action_videosFragment_to_video3Fragment"
+            app:destination="@id/video3Fragment" />
+        <action
+            android:id="@+id/action_videosFragment_to_video4Fragment"
+            app:destination="@id/video4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/procedure1Fragment"
+        android:name="com.example.hggc.procedures.Procedure1Fragment"
+
+        tools:layout="@layout/fragment_procedure1" />
+    <fragment
+        android:id="@+id/procedure2Fragment"
+        android:name="com.example.hggc.procedures.Procedure2Fragment"
+
+        tools:layout="@layout/fragment_procedure2" />
+    <fragment
+        android:id="@+id/procedure3Fragment"
+        android:name="com.example.hggc.procedures.Procedure3Fragment"
+
+        tools:layout="@layout/fragment_procedure3" />
+    <fragment
+        android:id="@+id/procedure4Fragment"
+        android:name="com.example.hggc.procedures.Procedure4Fragment"
+
+        tools:layout="@layout/fragment_procedure4" />
+    <fragment
+        android:id="@+id/procedure5Fragment"
+        android:name="com.example.hggc.procedures.Procedure5Fragment"
+
+        tools:layout="@layout/fragment_procedure5" />
+    <fragment
+        android:id="@+id/procedure6Fragment"
+        android:name="com.example.hggc.procedures.Procedure6Fragment"
+
+        tools:layout="@layout/fragment_procedure6" />
+    <fragment
+        android:id="@+id/emergProc1Fragment"
+        android:name="com.example.hggc.emergencyprocedures.EmergProc1Fragment"
+
+        tools:layout="@layout/fragment_emerg_proc1" />
+    <fragment
+        android:id="@+id/emergProc2Fragment"
+        android:name="com.example.hggc.emergencyprocedures.EmergProc2Fragment"
+
+        tools:layout="@layout/fragment_emerg_proc2" />
+    <fragment
+        android:id="@+id/emergProc3Fragment"
+        android:name="com.example.hggc.emergencyprocedures.EmergProc3Fragment"
+
+        tools:layout="@layout/fragment_emerg_proc3" />
+    <fragment
+        android:id="@+id/emergProc4Fragment"
+        android:name="com.example.hggc.emergencyprocedures.EmergProc4Fragment"
+
+        tools:layout="@layout/fragment_emerg_proc4" />
+    <fragment
+        android:id="@+id/emergProc5Fragment"
+        android:name="com.example.hggc.emergencyprocedures.EmergProc5Fragment"
+
+        tools:layout="@layout/fragment_emerg_proc5" />
+    <fragment
+        android:id="@+id/emergProc6Fragment"
+        android:name="com.example.hggc.emergencyprocedures.EmergProc6Fragment"
+
+        tools:layout="@layout/fragment_emerg_proc6" />
+    <fragment
+        android:id="@+id/emergProc7Fragment"
+        android:name="com.example.hggc.emergencyprocedures.EmergProc7Fragment"
+
+        tools:layout="@layout/fragment_emerg_proc7" />
+    <fragment
+        android:id="@+id/emergProc8Fragment"
+        android:name="com.example.hggc.emergencyprocedures.EmergProc8Fragment"
+
+        tools:layout="@layout/fragment_emerg_proc8" />
+    <activity
+        android:id="@+id/readerFragment"
+        android:name="com.example.hggc.ReaderFragment"
+        android:label="HGGC"
+        tools:layout="@layout/fragment_reader" />
+    <fragment
+        android:id="@+id/video1Fragment"
+        android:name="com.example.hggc.videos.Video1Fragment"
+        android:label="fragment_video1"
+        tools:layout="@layout/fragment_video1" />
+    <fragment
+        android:id="@+id/video2Fragment"
+        android:name="com.example.hggc.videos.Video2Fragment"
+        android:label="fragment_video2"
+        tools:layout="@layout/fragment_video2" />
+    <fragment
+        android:id="@+id/video3Fragment"
+        android:name="com.example.hggc.videos.Video3Fragment"
+        android:label="fragment_video3"
+        tools:layout="@layout/fragment_video3" />
+    <fragment
+        android:id="@+id/WForm1Fragment"
+        android:name="com.example.hggc.workforms.WForm1Fragment"
+        android:label="fragment_w_form1"
+        tools:layout="@layout/fragment_w_form1" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.hggc.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.hggc.AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/form1Fragment"
+        android:name="com.example.hggc.workforms.Form1Fragment"
+        android:label="fragment_form1"
+        tools:layout="@layout/fragment_form1" />
+    <fragment
+        android:id="@+id/restArea"
+        android:name="com.example.hggc.RestArea"
+        android:label="fragment_rest_area"
+        tools:layout="@layout/fragment_rest_area" >
+        <action
+            android:id="@+id/action_restArea_to_readerFragment"
+            app:destination="@id/readerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.example.hggc.Map"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_map2_to_readerFragment"
+            app:destination="@id/readerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/video4Fragment"
+        android:name="com.example.hggc.videos.Video4Fragment"
+        android:label="fragment_video4"
+        tools:layout="@layout/fragment_video4" />
+    <fragment
+        android:id="@+id/journeyPlanFragment"
+        android:name="com.example.hggc.JourneyPlanFragment"
+        android:label="fragment_journey_plan"
+        tools:layout="@layout/fragment_journey_plan" >
+        <action
+            android:id="@+id/action_journeyPlanFragment_to_map2"
+            app:destination="@id/map2" />
+        <action
+            android:id="@+id/action_journeyPlanFragment_to_journeyPlanListFragment"
+            app:destination="@id/journeyPlanListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/journeyPlanListFragment"
+        android:name="com.example.hggc.JourneyPlanListFragment"
+        android:label="fragment_journey_plan_list"
+        tools:layout="@layout/fragment_journey_plan_list" >
+        <action
+            android:id="@+id/action_journeyPlanListFragment_to_readerFragment"
+            app:destination="@id/readerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardsAndPenaltiesFragment"
+        android:name="com.example.hggc.RewardsAndPenaltiesFragment"
+        android:label="fragment_rewards_and_penalties"
+        tools:layout="@layout/fragment_rewards_and_penalties" >
+        <action
+            android:id="@+id/action_rewardsAndPenaltiesFragment_to_rewardsFragment"
+            app:destination="@id/rewardsFragment" />
+        <action
+            android:id="@+id/action_rewardsAndPenaltiesFragment_to_penaltiesFragment"
+            app:destination="@id/penaltiesFragment" />
+    </fragment>
+
+
+</navigation>

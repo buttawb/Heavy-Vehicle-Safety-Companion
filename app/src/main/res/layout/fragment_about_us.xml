@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="16dp">
+
+            <!-- Top Heading "Who We Are" -->
+            <TextView
+                android:id="@+id/whoWeAreHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="Who We Are"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <!-- Image with a border -->
+            <ImageView
+                android:id="@+id/companyImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+
+                android:src="@raw/aboutus" />
+
+
+            <TextView
+                android:id="@+id/aboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Haji Gul Group Of Companies (HGGC) is one of the leading companies in the Pakistani transportation industry. We have more than 32 years of experience in the market with a strong history of dependability and trust with our clients. HGGC has come to be a very successful enterprise with several notable achievements including being the pioneers of transportation of liquid hydrocarbon in Pakistan. Maintaining quality and safety standards is always our first priority and we follow strict protocols to ensure this is followed. We plan to continue to engineer new ways to bring improvements in the transportation industry and bring Pakistan to the forefront."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/bottomLine"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/scrollView"
+                android:background="@color/purple_500" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

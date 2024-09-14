@@ -1,0 +1,3027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JourneyPlanListFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/baseline_brightness"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Retailer Site (Karachi)"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image2"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Al-Makkah Autos Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image3"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Almas Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs3"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image4"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" Ahmed Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs4"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image5"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" Al-Khair Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs5"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image6"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image6"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" Alayan Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs6"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image7"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image7"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" AMA Petroleum Service"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs7"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image8"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image8"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" Ahsan Petroleum"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs8"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image9"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image9"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" Ahsan Petroleum"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs9"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image10"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image10"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" Al-Raheem Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs10"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image11"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image11"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" Al-Rafay Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs11"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image12"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image12"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Al-Siddque Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs12"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image13"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image13"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Awan Tracking Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs13"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image14"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image14"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="A and Y Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs14"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image15"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image15"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Babar Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs15"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image16"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image16"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Barqi Gasoline"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs16"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image17"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image17"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Base Masroor Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs17"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image18"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image18"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Beach View Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs18"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image19"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image19"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Creamy Autos"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs19"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image20"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image20"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Chairman Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs20"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image21"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image21"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Central Gasoline"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs21"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image22"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image22"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="CNG System"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs22"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image23"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image23"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Data Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs23"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image24"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image24"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Enchanty Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs24"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image25"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image25"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Excel Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs25"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image26"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image26"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Faisal Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs26"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image27"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image27"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Fauji Tracking Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs27"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image28"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image28"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Gotay Waale Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs28"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image29"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image29"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Hub Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs29"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image30"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image30"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Hafiz Sudais Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs30"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image31"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image31"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="High Speed Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs31"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image32"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image32"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Jannat Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs32"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image33"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image33"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Jinnah Petroleum"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs33"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image34"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image34"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Jawed Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs34"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image35"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image35"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="New Korangi Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs35"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image36"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image36"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Kamaal Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs36"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image37"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image37"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Khyper Petroleum Service"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs37"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image38"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image38"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Khawar Shaheed Filling"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs38"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image39"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image39"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Lavendar Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs39"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image40"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image40"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Mashallahh Associates"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs40"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image41"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image41"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Madni Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs41"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image42"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image42"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Al Makkah Autos Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs42"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image43"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image43"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Malir Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs43"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image44"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image44"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Meena Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs44"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image45"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image45"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="MM Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs45"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image46"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image46"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Moon Petroleum"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs46"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image47"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title47"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image47"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="MS Madina Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs47"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image48"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image48"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Millat Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs48"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image49"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title49"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image49"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Naseem Brothers Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs49"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image50"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image50"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Naveed Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs50"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image51"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image51"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Northern Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs51"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image52"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image52"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Prime Fuel Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs52"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image53"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image53"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Qasim Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs53"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image54"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image54"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Raja 2 Petroleum"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs54"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image55"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image55"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Raja Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs55"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image56"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image56"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="RM Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs56"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image57"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image57"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Rex Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs57"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image58"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title58"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image58"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Sabir Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs58"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image59"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image59"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Saif Petroleum"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs59"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image60"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image60"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Salsabeel Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs60"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image61"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image61"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Saliheen Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs61"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image62"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image62"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Sana Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs62"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image63"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image63"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Saiyara Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs63"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image64"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image64"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Sumair Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs64"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image65"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image65"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Star Gate Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs65"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image66"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image66"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Shehryar Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs66"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image67"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title67"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image67"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Shujaat Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs67"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image68"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title68"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image68"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="SM Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs68"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image69"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title69"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image69"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Star Gatee"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs69"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image70"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title70"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image70"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Sahir Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs70"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image71"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image71"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Subha Nallah Associate"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs71"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image72"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image72"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Sun Filling Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs72"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image73"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title73"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image73"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Technical Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs73"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image74"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title74"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image74"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Yasin Brothers"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rs74"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fff"
+                        android:elevation="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="10dp"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/news_image75"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/baseline_map_24"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/news_title75"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_toEndOf="@+id/news_image75"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Yadgar Service Station"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#CCCCCC" />
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</FrameLayout>
