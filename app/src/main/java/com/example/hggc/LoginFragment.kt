@@ -12,10 +12,8 @@ class LoginFragment : AppCompatActivity() {
 
     // Define a list of valid username-password pairs
     private val validCredentials = listOf(
-        "admin" to "password",
-        "user1" to "pass123",
-        "user2" to "mypassword",
-        "guest" to "guest123"
+        "HGGC" to "D.usman",
+        "awb" to "testawb"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
