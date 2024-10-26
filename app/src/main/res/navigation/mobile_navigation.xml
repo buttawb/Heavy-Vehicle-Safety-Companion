@@ -433,6 +433,15 @@
             android:id="@+id/action_rewardsAndPenaltiesFragment_to_penaltiesFragment"
             app:destination="@id/penaltiesFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.hggc.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_nav_home2"
+            app:destination="@id/nav_home" />
+    </fragment>
 
 
 </navigation>

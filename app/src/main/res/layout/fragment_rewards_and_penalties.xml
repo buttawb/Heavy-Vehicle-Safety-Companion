@@ -65,7 +65,7 @@ tools:context=".RewardsAndPenaltiesFragment">
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/baseline_text_fields_24"
+                        android:src="@drawable/baseline_card_giftcard_24"
                         tools:ignore="DuplicateIds" />
 
                     <TextView
@@ -105,7 +105,7 @@ tools:context=".RewardsAndPenaltiesFragment">
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/baseline_text_fields_24"
+                        android:src="@drawable/baseline_card_giftcard_24"
                         tools:ignore="DuplicateIds" />
 
                     <TextView

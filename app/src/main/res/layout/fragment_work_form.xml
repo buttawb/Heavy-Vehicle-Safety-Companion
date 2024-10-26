@@ -65,7 +65,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_text_fields_24"
+                            android:src="@drawable/baseline_stop_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -145,7 +145,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_text_fields_24"
+                            android:src="@drawable/baseline_stop_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -185,7 +185,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_text_fields_24"
+                            android:src="@drawable/baseline_stop_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -225,7 +225,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_text_fields_24"
+                            android:src="@drawable/baseline_stop_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
@@ -265,7 +265,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/baseline_text_fields_24"
+                            android:src="@drawable/baseline_stop_24"
                             tools:ignore="DuplicateIds" />
 
                         <TextView
