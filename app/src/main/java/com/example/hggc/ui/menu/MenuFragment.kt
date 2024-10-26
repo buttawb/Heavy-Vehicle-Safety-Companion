@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavOptions
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.hggc.IntroFragment
@@ -44,61 +46,54 @@ class MenuFragment : Fragment() {
         val card11 = binding.restarea
         val card12 = binding.map
 
-        card1.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_introFragment)
+        fun setCardClickAnimation(card: View, destinationId: Int, bundle: Bundle? = null) {
+            card.setOnClickListener {
+                it.animate()
+                    .scaleX(0.9f)
+                    .scaleY(0.9f)
+                    .alpha(0.8f)
+                    .setDuration(150)
+                    .setInterpolator(AccelerateDecelerateInterpolator())
+                    .withEndAction {
+                        val navOptions = NavOptions.Builder()
+                            .setEnterAnim(R.anim.slide_in_right)  // Use custom animation for entering
+                            .setExitAnim(R.anim.slide_out_left)   // Use custom animation for exiting
+                            .setPopEnterAnim(R.anim.slide_in_left) // Animation for going back
+                            .setPopExitAnim(R.anim.slide_out_right) // Animation for going back
+                            .build()
+
+                        findNavController().navigate(destinationId, bundle, navOptions)
+
+                        // Reset animation after navigation
+                        it.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .alpha(1f)
+                            .setDuration(150)
+                            .setInterpolator(AccelerateDecelerateInterpolator())
+                            .start()
+                    }
+                    .start()
+            }
         }
 
-        card2.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_driverFragment)
+        // Set up animated navigation for each card
+        setCardClickAnimation(card1, R.id.action_nav_menu_to_introFragment)
+        setCardClickAnimation(card2, R.id.action_nav_menu_to_driverFragment)
+        setCardClickAnimation(card3, R.id.action_nav_menu_to_policiesFragment)
+        setCardClickAnimation(card4, R.id.action_nav_menu_to_proceduresFragment)
+        setCardClickAnimation(card5, R.id.action_nav_menu_to_emergencyProceduresFragment)
+        setCardClickAnimation(card6, R.id.action_nav_menu_to_trainingFragment)
+
+        val pdfBundle = Bundle().apply {
+            putString("pdfFileName", "handbook.pdf")
         }
-        card3.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_policiesFragment)
-        }
-
-        card4.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_proceduresFragment)
-        }
-
-        card5.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_emergencyProceduresFragment)
-        }
-
-        card6.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_trainingFragment)
-        }
-
-//        card7.setOnClickListener {
-//            findNavController().navigate(R.id.action_nav_menu_to_workFormFragment)
-//        }
-
-        card7.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "handbook.pdf")
-
-            findNavController().navigate(R.id.action_nav_menu_to_readerFragment, bundle)
-
-        }
-
-        card8.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_rewardsAndPenaltiesFragment)
-        }
-
-        card9.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_workFormFragment)
-        }
-
-        card10.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_videosFragment)
-        }
-
-        card11.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_restArea)
-        }
-
-        card12.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_menu_to_journeyPlanFragment)
-        }
-// Add similar listeners for other cards
+        setCardClickAnimation(card7, R.id.action_nav_menu_to_readerFragment, pdfBundle)
+        setCardClickAnimation(card8, R.id.action_nav_menu_to_rewardsAndPenaltiesFragment)
+        setCardClickAnimation(card9, R.id.action_nav_menu_to_workFormFragment)
+        setCardClickAnimation(card10, R.id.action_nav_menu_to_videosFragment)
+        setCardClickAnimation(card11, R.id.action_nav_menu_to_restArea)
+        setCardClickAnimation(card12, R.id.action_nav_menu_to_journeyPlanFragment)
 
 
         // ...
