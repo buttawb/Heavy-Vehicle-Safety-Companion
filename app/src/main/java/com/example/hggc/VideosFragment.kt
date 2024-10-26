@@ -39,25 +39,20 @@ class VideosFragment : Fragment() {
         val video3 = view.findViewById<RelativeLayout>(R.id.video3)
         val video4 = view.findViewById<RelativeLayout>(R.id.video4)
 
-        video1.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_videosFragment_to_video1Fragment)
+        fun setVideoClickListener(view: View, destinationId: Int) {
+            view.setOnClickListener {
+                AnimationUtils.setCardClickAnimation(view, destinationId)
+            }
         }
 
-        video2.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_videosFragment_to_video2Fragment)
-        }
+        setVideoClickListener(video1, R.id.action_videosFragment_to_video1Fragment)
+        setVideoClickListener(video2, R.id.action_videosFragment_to_video2Fragment)
+        setVideoClickListener(video3, R.id.action_videosFragment_to_video3Fragment)
+        setVideoClickListener(video4, R.id.action_videosFragment_to_video4Fragment)
 
-        video3.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_videosFragment_to_video3Fragment)
-        }
-        video4.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_videosFragment_to_video4Fragment)
-        }
     }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

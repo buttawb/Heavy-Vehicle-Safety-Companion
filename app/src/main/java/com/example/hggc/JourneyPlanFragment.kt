@@ -43,12 +43,9 @@ class JourneyPlanFragment : Fragment() {
         val m2 = view.findViewById<RelativeLayout>(R.id.m2)
         val m3 = view.findViewById<RelativeLayout>(R.id.m3)
 
-        m2.setOnClickListener {
-            findNavController().navigate(R.id.action_journeyPlanFragment_to_map2)
-        }
-        m3.setOnClickListener {
-            findNavController().navigate(R.id.action_journeyPlanFragment_to_journeyPlanListFragment)
-        }
+        AnimationUtils.setCardClickAnimation(m2, R.id.action_journeyPlanFragment_to_map2)
+        AnimationUtils.setCardClickAnimation(m3, R.id.action_journeyPlanFragment_to_journeyPlanListFragment)
+
         return view
     }
 

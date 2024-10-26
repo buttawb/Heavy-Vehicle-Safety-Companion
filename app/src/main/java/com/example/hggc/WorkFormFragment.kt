@@ -40,42 +40,23 @@ class WorkFormFragment : Fragment() {
         val wf4 = view.findViewById<RelativeLayout>(R.id.wf5)
         val wf5 = view.findViewById<RelativeLayout>(R.id.wf6)
 
-        wf1.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "stl.pdf")
-
-            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
-
+        fun setWorkFormClickListener(view: View, pdfFileName: String, destinationId: Int) {
+            view.setOnClickListener {
+                val bundle = Bundle().apply {
+                    putString("pdfFileName", pdfFileName)
+                }
+                AnimationUtils.setCardClickAnimation(view, destinationId, bundle)
+            }
         }
-        wf2.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "trip_log.pdf")
 
-            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
-
-        }
-        wf3.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "ddc.pdf")
-
-            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
-
-        }
-        wf4.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "nmpi.pdf")
-
-            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
-
-        }
-        wf5.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "vts.pdf")
-
-            findNavController().navigate(R.id.action_workFormFragment_to_readerFragment, bundle)
-
-        }
+        setWorkFormClickListener(wf1, "stl.pdf", R.id.action_workFormFragment_to_readerFragment)
+        setWorkFormClickListener(wf2, "trip_log.pdf", R.id.action_workFormFragment_to_readerFragment)
+        setWorkFormClickListener(wf3, "ddc.pdf", R.id.action_workFormFragment_to_readerFragment)
+        setWorkFormClickListener(wf4, "nmpi.pdf", R.id.action_workFormFragment_to_readerFragment)
+        setWorkFormClickListener(wf5, "vts.pdf", R.id.action_workFormFragment_to_readerFragment)
     }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?

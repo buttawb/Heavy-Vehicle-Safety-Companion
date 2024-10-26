@@ -28,40 +28,22 @@ class ProceduresFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val p1 = view.findViewById<RelativeLayout>(R.id.P1)
-        p1.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_proceduresFragment_to_procedure1Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(p1, R.id.action_proceduresFragment_to_procedure1Fragment)
 
         val p2 = view.findViewById<RelativeLayout>(R.id.P2)
-        p2.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_proceduresFragment_to_procedure2Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(p2, R.id.action_proceduresFragment_to_procedure2Fragment)
 
         val p3 = view.findViewById<RelativeLayout>(R.id.P3)
-        p3.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_proceduresFragment_to_procedure3Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(p3, R.id.action_proceduresFragment_to_procedure3Fragment)
 
         val p4 = view.findViewById<RelativeLayout>(R.id.P4)
-        p4.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_proceduresFragment_to_procedure4Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(p4, R.id.action_proceduresFragment_to_procedure4Fragment)
 
         val p5 = view.findViewById<RelativeLayout>(R.id.P5)
-        p5.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_proceduresFragment_to_procedure5Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(p5, R.id.action_proceduresFragment_to_procedure5Fragment)
 
         val p6 = view.findViewById<RelativeLayout>(R.id.P6)
-        p6.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_proceduresFragment_to_procedure6Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(p6, R.id.action_proceduresFragment_to_procedure6Fragment)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

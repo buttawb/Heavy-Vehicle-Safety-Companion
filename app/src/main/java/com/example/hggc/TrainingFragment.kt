@@ -33,97 +33,26 @@ class TrainingFragment : Fragment() {
         val train10Layout = view.findViewById<RelativeLayout>(R.id.train10)
         val train11Layout = view.findViewById<RelativeLayout>(R.id.train11)
 
-        train1Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "fire.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-        // Set an OnClickListener for the train1Layout
-        train2Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "jouney.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train3Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "auth.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train4Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "emerg.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train5Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "loading.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train6Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "spill.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train7Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "height.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train8Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "er2023.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train9Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "tp2023.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train10Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "er2024.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
-
-        train11Layout.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "tp2024.pdf")
-
-            findNavController().navigate(R.id.action_trainingFragment_to_readerFragment, bundle)
-
-        }
+        setTrainingClickListener(train1Layout, "fire.pdf")
+        setTrainingClickListener(train2Layout, "journey.pdf")
+        setTrainingClickListener(train3Layout, "auth.pdf")
+        setTrainingClickListener(train4Layout, "emerg.pdf")
+        setTrainingClickListener(train5Layout, "loading.pdf")
+        setTrainingClickListener(train6Layout, "spill.pdf")
+        setTrainingClickListener(train7Layout, "height.pdf")
+        setTrainingClickListener(train8Layout, "er2023.pdf")
+        setTrainingClickListener(train9Layout, "tp2023.pdf")
+        setTrainingClickListener(train10Layout, "er2024.pdf")
+        setTrainingClickListener(train11Layout, "tp2024.pdf")
 
         return view
     }
 
+    private fun setTrainingClickListener(layout: View, pdfFileName: String) {
+        AnimationUtils.setCardClickAnimation(layout, R.id.action_trainingFragment_to_readerFragment, Bundle().apply {
+            putString("pdfFileName", pdfFileName)
+        })
+    }
 
     companion object {
         @JvmStatic

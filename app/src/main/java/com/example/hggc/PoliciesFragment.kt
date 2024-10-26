@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.Button
 import android.widget.RelativeLayout
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
@@ -28,66 +30,36 @@ class PoliciesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        
         val policy1 = view.findViewById<RelativeLayout>(R.id.pol1)
-        policy1.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy1Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy1, R.id.action_policiesFragment_to_policy1Fragment)
 
         val policy2 = view.findViewById<RelativeLayout>(R.id.pol2)
-        policy2.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy2Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy2, R.id.action_policiesFragment_to_policy2Fragment)
 
         val policy3 = view.findViewById<RelativeLayout>(R.id.pol3)
-        policy3.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy3Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy3, R.id.action_policiesFragment_to_policy3Fragment)
 
         val policy4 = view.findViewById<RelativeLayout>(R.id.pol4)
-        policy4.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy4Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy4, R.id.action_policiesFragment_to_policy4Fragment)
 
         val policy5 = view.findViewById<RelativeLayout>(R.id.pol5)
-        policy5.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy5Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy5, R.id.action_policiesFragment_to_policy5Fragment)
 
         val policy6 = view.findViewById<RelativeLayout>(R.id.pol6)
-        policy6.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy6Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy6, R.id.action_policiesFragment_to_policy6Fragment)
 
         val policy7 = view.findViewById<RelativeLayout>(R.id.pol7)
-        policy7.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy7Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy7, R.id.action_policiesFragment_to_policy7Fragment)
 
         val policy8 = view.findViewById<RelativeLayout>(R.id.pol8)
-        policy8.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy8Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy8, R.id.action_policiesFragment_to_policy8Fragment)
 
         val policy9 = view.findViewById<RelativeLayout>(R.id.pol9)
-        policy9.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy9Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy9, R.id.action_policiesFragment_to_policy9Fragment)
 
         val policy10 = view.findViewById<RelativeLayout>(R.id.pol10)
-        policy10.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_policiesFragment_to_policy10Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(policy10, R.id.action_policiesFragment_to_policy10Fragment)
 
     }
 

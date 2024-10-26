@@ -77,11 +77,10 @@ class JourneyPlanListFragment : Fragment() {
         )
 
         for (i in raIds.indices) {
-            view.findViewById<RelativeLayout>(raIds[i]).setOnClickListener {
-                val bundle = Bundle()
-                bundle.putString("pdfFileName", pdfFileNames[i])
-                findNavController().navigate(R.id.action_journeyPlanListFragment_to_readerFragment, bundle)
-            }
+            val layout = view.findViewById<RelativeLayout>(raIds[i])
+            AnimationUtils.setCardClickAnimation(layout, R.id.action_journeyPlanListFragment_to_readerFragment, Bundle().apply {
+                putString("pdfFileName", pdfFileNames[i])
+            })
         }
         return view
     }

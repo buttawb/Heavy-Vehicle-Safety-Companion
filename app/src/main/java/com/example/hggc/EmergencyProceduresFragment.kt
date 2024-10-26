@@ -27,52 +27,28 @@ class EmergencyProceduresFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val Ep1 = view.findViewById<RelativeLayout>(R.id.EP1)
-        Ep1.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_emergencyProceduresFragment_to_emergProc1Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(Ep1, R.id.action_emergencyProceduresFragment_to_emergProc1Fragment)
 
         val Ep2 = view.findViewById<RelativeLayout>(R.id.EP2)
-        Ep2.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_emergencyProceduresFragment_to_emergProc2Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(Ep2, R.id.action_emergencyProceduresFragment_to_emergProc2Fragment)
 
         val Ep3 = view.findViewById<RelativeLayout>(R.id.EP3)
-        Ep3.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_emergencyProceduresFragment_to_emergProc3Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(Ep3, R.id.action_emergencyProceduresFragment_to_emergProc3Fragment)
 
         val Ep4 = view.findViewById<RelativeLayout>(R.id.EP4)
-        Ep4.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_emergencyProceduresFragment_to_emergProc4Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(Ep4, R.id.action_emergencyProceduresFragment_to_emergProc4Fragment)
 
         val Ep5 = view.findViewById<RelativeLayout>(R.id.EP5)
-        Ep5.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_emergencyProceduresFragment_to_emergProc5Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(Ep5, R.id.action_emergencyProceduresFragment_to_emergProc5Fragment)
 
         val Ep6 = view.findViewById<RelativeLayout>(R.id.EP6)
-        Ep6.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_emergencyProceduresFragment_to_emergProc6Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(Ep6, R.id.action_emergencyProceduresFragment_to_emergProc6Fragment)
 
         val Ep7 = view.findViewById<RelativeLayout>(R.id.EP7)
-        Ep7.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_emergencyProceduresFragment_to_emergProc7Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(Ep7, R.id.action_emergencyProceduresFragment_to_emergProc7Fragment)
 
         val Ep8 = view.findViewById<RelativeLayout>(R.id.EP8)
-        Ep8.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_emergencyProceduresFragment_to_emergProc8Fragment)
-        }
+        AnimationUtils.setCardClickAnimation(Ep8, R.id.action_emergencyProceduresFragment_to_emergProc8Fragment)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

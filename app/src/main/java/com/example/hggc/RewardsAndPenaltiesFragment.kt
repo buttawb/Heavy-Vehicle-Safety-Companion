@@ -37,15 +37,13 @@ class RewardsAndPenaltiesFragment : Fragment() {
         val rp1 = view.findViewById<RelativeLayout>(R.id.rp1)
         val rp2 = view.findViewById<RelativeLayout>(R.id.rp2)
 
-        rp1.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_rewardsAndPenaltiesFragment_to_rewardsFragment)
-        }
-        rp2.setOnClickListener {
-            // Navigate to Policy1Fragment when the button is clicked
-            findNavController().navigate(R.id.action_rewardsAndPenaltiesFragment_to_penaltiesFragment)
-        }
+        setRewardsClickListener(rp1, R.id.action_rewardsAndPenaltiesFragment_to_rewardsFragment)
+        setRewardsClickListener(rp2, R.id.action_rewardsAndPenaltiesFragment_to_penaltiesFragment)
 
+    }
+
+    private fun setRewardsClickListener(view: View, destinationId: Int) {
+        AnimationUtils.setCardClickAnimation(view, destinationId)
     }
 
     override fun onCreateView(

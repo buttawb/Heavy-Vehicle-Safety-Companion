@@ -43,23 +43,17 @@ class RestArea : Fragment() {
         val ra2 = view.findViewById<RelativeLayout>(R.id.ra2)
 
 
-        ra1.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "ra.pdf")
+        AnimationUtils.setCardClickAnimation(ra1, R.id.action_restArea_to_readerFragment, Bundle().apply {
+            putString("pdfFileName", "ra.pdf")
+        })
 
-            findNavController().navigate(R.id.action_restArea_to_readerFragment, bundle)
-
-        }
-        // Set an OnClickListener for the train1Layout
-        ra2.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "lbs.pdf")
-
-            findNavController().navigate(R.id.action_restArea_to_readerFragment, bundle)
-
-        }
+        // Set animations and navigation for ra2
+        AnimationUtils.setCardClickAnimation(ra2, R.id.action_restArea_to_readerFragment, Bundle().apply {
+            putString("pdfFileName", "lbs.pdf")
+        })
         return view
     }
+
 
     companion object {
         /**

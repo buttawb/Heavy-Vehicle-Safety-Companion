@@ -36,159 +36,29 @@ class Map : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_map, container, false)
+        val pdfFileNames = arrayOf(
+            "5.pdf", "6.pdf", "7.pdf", "9.pdf", "10.pdf", "12.pdf",
+            "13.pdf", "14.pdf", "15.pdf", "16.pdf", "20.pdf",
+            "21.pdf", "22.pdf", "23.pdf", "24.pdf", "25.pdf",
+            "26.pdf", "27.pdf"
+        )
 
-        // Find the RelativeLayout with id train1
-        val m2 = view.findViewById<RelativeLayout>(R.id.m2)
-        val m3 = view.findViewById<RelativeLayout>(R.id.m3)
-        val m4 = view.findViewById<RelativeLayout>(R.id.m4)
+        val layoutIds = arrayOf(
+            R.id.m2, R.id.m3, R.id.m4, R.id.m6, R.id.m7, R.id.m8,
+            R.id.m9, R.id.m10, R.id.m11, R.id.m12, R.id.m13,
+            R.id.m14, R.id.m15, R.id.m16, R.id.m17, R.id.m18,
+            R.id.m19, R.id.m20
+        )
 
-        val m6 = view.findViewById<RelativeLayout>(R.id.m6)
-        val m7 = view.findViewById<RelativeLayout>(R.id.m7)
-        val m8 = view.findViewById<RelativeLayout>(R.id.m8)
-        val m9 = view.findViewById<RelativeLayout>(R.id.m9)
-        val m10 = view.findViewById<RelativeLayout>(R.id.m10)
-        val m11 = view.findViewById<RelativeLayout>(R.id.m11)
-
-        val m12 = view.findViewById<RelativeLayout>(R.id.m12)
-        val m13 = view.findViewById<RelativeLayout>(R.id.m13)
-        val m14 = view.findViewById<RelativeLayout>(R.id.m14)
-        val m15 = view.findViewById<RelativeLayout>(R.id.m15)
-        val m16 = view.findViewById<RelativeLayout>(R.id.m16)
-        val m17 = view.findViewById<RelativeLayout>(R.id.m17)
-        val m18 = view.findViewById<RelativeLayout>(R.id.m18)
-        val m19 = view.findViewById<RelativeLayout>(R.id.m19)
-        val m20 = view.findViewById<RelativeLayout>(R.id.m20)
-
-        m2.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "5.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m3.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "6.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m4.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "7.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m6.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "9.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m7.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "10.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m8.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "12.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m9.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "13.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m10.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "14.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m11.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "15.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m12.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "16.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m13.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "20.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m14.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "21.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m15.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "22.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m16.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "23.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m17.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "24.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m18.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "25.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m19.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "26.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
-        }
-        m20.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString("pdfFileName", "27.pdf")
-
-            findNavController().navigate(R.id.action_map2_to_readerFragment, bundle)
-
+        // Set animations and navigation for each layout
+        for (i in layoutIds.indices) {
+            val layout = view.findViewById<RelativeLayout>(layoutIds[i])
+            AnimationUtils.setCardClickAnimation(layout, R.id.action_map2_to_readerFragment, Bundle().apply {
+                putString("pdfFileName", pdfFileNames[i])
+            })
         }
         return view
     }
-
-
 
     companion object {
         /**
